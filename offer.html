@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>U-Time College — Калькулятор Ваучера до 80% (7000₪) и Пикадона до 100% | 30+ Филиалов в Израиле</title>
+  <meta name="description" content="U-Time College (מכללת U-Time): интерактивный калькулятор государственного ваучера до 80% (до 7000₪) от Министерства алии и до 100% Пикадон ЦАХАЛ. Курсы AI и GEO/AEO/SEO трафика, QA, Android-приложения, Веб, Серверы, Игры, Бухгалтерия 1+2." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Heebo', 'Rubik', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'Rubik', 'Heebo', 'sans-serif'],
+          },
+          colors: { obsidian: '#090D16', midnight: '#0F172A' },
+          animation: {
+            'aurora': 'aurora 14s ease-in-out infinite alternate',
+            'shimmer': 'shimmer 2.8s linear infinite',
+          },
+          keyframes: {
+            aurora: {
+              '0%': { transform: 'translate(0px, 0px) scale(1)' },
+              '50%': { transform: 'translate(30px, -25px) scale(1.08)' },
+              '100%': { transform: 'translate(-20px, 20px) scale(0.96)' },
+            },
+            shimmer: {
+              '0%': { backgroundPosition: '-200% 0' },
+              '100%': { backgroundPosition: '200% 0' },
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    :root {
+      --bg-primary: #090D16;
+      --bg-secondary: #0F172A;
+      --text-primary: #FFFFFF;
+      --card-bg: rgba(15, 23, 42, 0.78);
+      --card-border: rgba(168, 85, 247, 0.28);
+    }
+    html.light {
+      --bg-primary: #F8FAFC;
+      --bg-secondary: #F1F5F9;
+      --text-primary: #0F172A;
+      --card-bg: rgba(255, 255, 255, 0.92);
+      --card-border: rgba(139, 92, 246, 0.28);
+    }
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      overflow-x: hidden;
+      transition: background-color 0.35s ease, color 0.35s ease;
+    }
+    .glass-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--card-border);
+    }
+    .shimmer-btn {
+      background: linear-gradient(90deg, #9333EA 0%, #38BDF8 50%, #9333EA 100%);
+      background-size: 200% 100%;
+      animation: shimmer 3s infinite linear;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #E9D5FF 0%, #C084FC 45%, #38BDF8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .num-nowrap { white-space: nowrap; font-variant-numeric: tabular-nums; display: inline-block; }
+  </style>
+</head>
+<body class="antialiased selection:bg-violet-600 selection:text-white pb-24 lg:pb-12">
+
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute -top-32 -left-32 w-[480px] h-[480px] rounded-full bg-violet-600/20 blur-[130px] animate-aurora"></div>
+    <div class="absolute top-1/3 -right-32 w-[460px] h-[460px] rounded-full bg-sky-500/20 blur-[130px] animate-aurora" style="animation-delay: -5s;"></div>
+  </div>
+
+  <!-- Sticky Header (Brand ALWAYS in English: U-Time College) -->
+  <header class="sticky top-0 z-50 glass-card border-b border-violet-500/25">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-3">
+      <a href="index.html" class="flex items-center gap-3 group shrink-0">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-violet-600 via-purple-600 to-sky-500 flex items-center justify-center shadow-lg shadow-violet-600/30">
+          <span class="font-display font-extrabold text-white text-xl">U</span>
+        </div>
+        <div>
+          <div class="font-display font-extrabold text-lg sm:text-xl tracking-tight text-white flex items-center gap-2">
+            <span>U-Time College</span>
+            <span class="hidden sm:inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-violet-500/20 text-violet-200 border border-violet-400/30">30+ Campuses</span>
+          </div>
+          <p class="text-xs text-sky-200/90" data-i18n="nav_subtitle">מכללת U-Time • Сеть колледжей IT, AI, GEO/AEO/SEO и Карьеры</p>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-1 bg-slate-900/70 border border-violet-500/25 rounded-2xl p-1.5">
+        <a href="index.html" class="px-4 py-2 rounded-xl text-sm font-medium text-sky-100 hover:text-white hover:bg-violet-600/20 transition-all" data-i18n="nav_home">Главная Витрина</a>
+        <a href="offer.html" class="px-4 py-2 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-violet-600 to-sky-500 shadow-md shadow-violet-600/25" data-i18n="nav_offer">Калькулятор Ваучера 80%</a>
+        <a href="audit.html" class="px-4 py-2 rounded-xl text-sm font-medium text-sky-100 hover:text-white hover:bg-violet-600/20 transition-all" data-i18n="nav_audit">Аудит &amp; Рост (+265%)</a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <div class="flex items-center bg-slate-900/90 border border-violet-400/30 rounded-xl p-1">
+          <button type="button" onclick="setLanguage('ru')" id="lang-btn-ru" class="px-2.5 py-1 rounded-lg text-xs font-bold transition-all bg-gradient-to-r from-violet-600 to-sky-500 text-white shadow">RU</button>
+          <button type="button" onclick="setLanguage('he')" id="lang-btn-he" class="px-2.5 py-1 rounded-lg text-xs font-bold transition-all text-sky-200 hover:text-white">עב</button>
+          <button type="button" onclick="setLanguage('en')" id="lang-btn-en" class="px-2.5 py-1 rounded-lg text-xs font-bold transition-all text-sky-200 hover:text-white">EN</button>
+        </div>
+
+        <button type="button" onclick="toggleTheme()" class="w-10 h-10 rounded-xl bg-slate-900/80 border border-violet-400/30 flex items-center justify-center text-sky-200 hover:text-white">
+          <svg id="theme-icon-sun" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          <svg id="theme-icon-moon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+
+        <a href="tel:1700708019" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-violet-600 to-sky-500 text-white font-bold text-xs sm:text-sm shadow-lg num-nowrap">
+          <span>1-700-70-80-19</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="lg:hidden flex items-center justify-around border-t border-violet-500/20 bg-slate-950/80 px-2 py-2 text-xs font-semibold">
+      <a href="index.html" class="px-3 py-1.5 rounded-lg text-sky-200 hover:text-white" data-i18n="nav_home">Главная</a>
+      <a href="offer.html" class="px-3 py-1.5 rounded-lg bg-violet-600/30 text-white border border-violet-400/40" data-i18n="nav_offer">Калькулятор 80%</a>
+      <a href="audit.html" class="px-3 py-1.5 rounded-lg text-sky-200 hover:text-white" data-i18n="nav_audit">Аудит (+265%)</a>
+    </div>
+  </header>
+
+  <main class="relative z-10">
+
+    <!-- HERO MONEY PAGE -->
+    <section class="pt-10 pb-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7 space-y-5 reveal visible">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-violet-500/20 border border-violet-400/40 text-sky-100 text-xs font-bold">
+            <span data-i18n="off_badge">Официальная субсидия gov.il • До 80% (7000₪) от Министерства алии и до 100% Пикадон</span>
+          </div>
+          <h1 class="font-display font-extrabold text-3xl sm:text-5xl text-white leading-tight">
+            <span data-i18n="off_title_1">Рассчитайте вашу субсидию до 80%–100% в U-Time College и выйдите на зарплату</span>
+            <span class="gradient-text block mt-1 num-nowrap" data-i18n="off_title_sal">13000–26000₪ (3500–7000$)</span>
+          </h1>
+          <p class="text-sky-100/95 text-sm sm:text-base leading-relaxed" data-i18n="off_desc">
+            Колледж U-Time действует под эгидой Министерства алии и интеграции и насчитывает более 30 филиалов по всему Израилю. Мы выдаём официальное письменное обязательство трудоустройства (התחייבות להשמה בעבודה) для быстрого одобрения ваучера до 7000₪!
+          </p>
+        </div>
+        <div class="lg:col-span-5 reveal visible">
+          <div class="rounded-3xl overflow-hidden border-2 border-violet-400/40 shadow-2xl relative">
+            <img src="assets/it_lab.jpg" alt="U-Time College AI & QA Lab" class="w-full h-72 sm:h-80 object-cover" />
+            <div class="absolute bottom-3 left-3 right-3 glass-card rounded-2xl p-3.5 border border-sky-400/40">
+              <p class="text-xs font-extrabold text-sky-300" data-i18n="off_img_cap">85% практики + Помощь с трудоустройством (92% выпускников в штате)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE VOUCHER & SALARY CALCULATOR -->
+    <section class="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto reveal">
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border-2 border-violet-500/35">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div class="lg:col-span-7 space-y-5">
+            <div class="p-5 rounded-2xl bg-slate-900/80 border border-violet-400/30 space-y-3">
+              <label class="font-display font-bold text-base text-white block" data-i18n="calc_lbl_1">1. Выберите ваш статус для расчета субсидии:</label>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <button type="button" onclick="selectStatus('olim')" id="st-olim" class="p-3.5 rounded-xl border-2 border-sky-400 bg-violet-600/25 text-left text-white">
+                  <div class="flex justify-between font-extrabold text-sm"><span data-i18n="st_1_t">Олим Хадашим (до 10 лет)</span><span class="text-sky-300 num-nowrap">до 80%</span></div>
+                  <p class="text-xs text-sky-100/85 mt-1" data-i18n="st_1_d">Гос. ваучер до 7000₪ (1900$) после ульпана Алеф</p>
+                </button>
+                <button type="button" onclick="selectStatus('pikadon')" id="st-pikadon" class="p-3.5 rounded-xl border border-violet-400/30 bg-slate-900/60 text-left text-sky-100">
+                  <div class="flex justify-between font-extrabold text-sm"><span data-i18n="st_2_t">Солдат (Пикадон ЦАХАЛ)</span><span class="text-violet-300 num-nowrap">до 100%</span></div>
+                  <p class="text-xs text-sky-100/85 mt-1" data-i18n="st_2_d">Оплата до 100% напрямую из армейского фонда</p>
+                </button>
+                <button type="button" onclick="selectStatus('toshav')" id="st-toshav" class="p-3.5 rounded-xl border border-violet-400/30 bg-slate-900/60 text-left text-sky-100">
+                  <div class="flex justify-between font-extrabold text-sm"><span data-i18n="st_3_t">Тошав Хозер (до 2 лет)</span><span class="text-sky-300 num-nowrap">до 80%</span></div>
+                  <p class="text-xs text-sky-100/85 mt-1" data-i18n="st_3_d">Ваучер Министерства алии до 7000₪ (1900$)</p>
+                </button>
+                <button type="button" onclick="selectStatus('citizen')" id="st-citizen" class="p-3.5 rounded-xl border border-violet-400/30 bg-slate-900/60 text-left text-sky-100">
+                  <div class="flex justify-between font-extrabold text-sm"><span data-i18n="st_4_t">Гражданин Израиля</span><span class="text-violet-300 num-nowrap">до 25%</span></div>
+                  <p class="text-xs text-sky-100/85 mt-1" data-i18n="st_4_d">Грант U-Time College + удобная рассрочка</p>
+                </button>
+              </div>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-slate-900/80 border border-violet-400/30 space-y-3">
+              <label for="track-sel" class="font-display font-bold text-base text-white block" data-i18n="calc_lbl_2">2. Выберите современную программу обучения (85% практики):</label>
+              <select id="track-sel" onchange="updateCalc()" class="w-full rounded-xl bg-slate-950 border-2 border-violet-400/40 px-4 py-3 text-white font-bold text-sm">
+                <option value="ai_geo" data-i18n="opt_ai">Курсы обучения AI, Digital-Маркетингу и Трафику (GEO / AEO / SEO)</option>
+                <option value="qa" data-i18n="opt_qa">QA Software Tester + AI-Тестирование ПО</option>
+                <option value="android_dev" data-i18n="opt_and">Мобильные приложения (Android), Настольные, Веб-приложения, Серверы и Игры</option>
+                <option value="finance" data-i18n="opt_fin">Бухгалтерия (ступени 1+2) и Расчет зарплат (Хешеб Схар)</option>
+                <option value="ulpan_pro" data-i18n="opt_ulp">Профессиональные Ульпаны, Косметология и Прикладные специальности</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 glass-card rounded-3xl p-6 border-2 border-sky-400/50 bg-gradient-to-b from-violet-950/75 to-slate-950 space-y-4">
+            <div class="flex justify-between items-center border-b border-violet-400/30 pb-3">
+              <span class="text-xs font-extrabold uppercase text-sky-300" data-i18n="res_top">Ваша субсидия и доход после курса</span>
+              <span id="res-cov-badge" class="px-3 py-1 rounded-full bg-sky-500/25 text-sky-100 text-xs font-extrabold num-nowrap">до 80% (7000₪)</span>
+            </div>
+            <div>
+              <p class="text-xs text-sky-200" data-i18n="res_cov_t">Государственное покрытие обучения:</p>
+              <div id="res-cov-main" class="font-display font-extrabold text-3xl text-sky-300 mt-1 num-nowrap">до 80% (до 7000₪ / 1900$)</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-900/90 border border-violet-400/35">
+              <p class="text-xs text-sky-200" data-i18n="res_sal_t">Стартовая зарплата выпускника:</p>
+              <div id="res-sal-nis" class="font-display font-extrabold text-2xl sm:text-3xl text-white mt-1 num-nowrap">14000–26000₪</div>
+              <div id="res-sal-usd" class="text-xs font-bold text-sky-300 mt-0.5 num-nowrap">экв. 3800–7000$ в месяц</div>
+            </div>
+            <div class="space-y-2.5 pt-1">
+              <input id="u-name" type="text" placeholder="Ваше имя" class="w-full rounded-xl bg-slate-950 border border-violet-400/40 px-4 py-3 text-sm text-white" />
+              <input id="u-phone" type="tel" placeholder="Ваш телефон (05X-XXX-XXXX)" class="w-full rounded-xl bg-slate-950 border border-violet-400/40 px-4 py-3 text-sm text-white" />
+              <button type="button" onclick="sendOfferWhatsApp()" class="w-full shimmer-btn py-3.5 rounded-xl font-display font-extrabold text-white text-sm shadow-xl" data-i18n="res_btn">
+                Забронировать ваучер в WhatsApp (055-994-5112)
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALUMNI SUCCESS SECTION -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto reveal">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center glass-card rounded-3xl p-6 sm:p-10 border border-sky-400/35">
+        <div class="lg:col-span-5">
+          <img src="assets/career_success.jpg" alt="U-Time College Graduates" class="w-full h-72 object-cover rounded-2xl border border-violet-400/40" />
+        </div>
+        <div class="lg:col-span-7 space-y-4">
+          <span class="px-3 py-1 rounded-full bg-violet-500/25 text-violet-200 text-xs font-extrabold" data-i18n="succ_tag">92% помощь с трудоустройством • 30+ городов</span>
+          <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-white" data-i18n="succ_t">
+            «Училась рядом с домом в Ришон-ле-Ционе по ваучеру 80% (7000₪) — через 4 месяца вышла на 16500₪!»
+          </h2>
+          <p class="text-sky-100/90 text-sm sm:text-base leading-relaxed" data-i18n="succ_d">
+            Консультанты U-Time College помогли быстро оформить ваучер от Министерства алии. Благодаря двуязычному обучению (русский + иврит) и 85% практики я без страха прошла собеседование в израильскую компанию!
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-violet-500/25 bg-slate-950/90 py-10 px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-sky-200">
+      <div class="font-bold text-white">U-Time College • 1-700-70-80-19 • WhatsApp 055-994-5112</div>
+      <div class="flex gap-4 font-bold">
+        <a href="index.html" data-i18n="nav_home">Главная</a>
+        <a href="offer.html" class="text-white underline" data-i18n="nav_offer">Калькулятор 80%</a>
+        <a href="audit.html" data-i18n="nav_audit">Аудит (+265%)</a>
+      </div>
+    </div>
+  </footer>
+  <!-- 3-Language Dictionary & Calculator Logic for U-Time College offer.html -->
+  <script>
+    let currentLang = localStorage.getItem('utime_lang') || 'ru';
+    let currentStatus = 'olim';
+
+    const tracks = {
+      ai_geo: { nis: '14000–26000₪', usd: { ru: 'экв. 3800–7000$ в месяц', he: 'שווה ערך ל-3800–7000$ בחודש', en: 'equiv. 3800–7000$ / mo' } },
+      qa: { nis: '13000–23000₪', usd: { ru: 'экв. 3500–6200$ в месяц', he: 'שווה ערך ל-3500–6200$ בחודש', en: 'equiv. 3500–6200$ / mo' } },
+      android_dev: { nis: '15000–26000₪', usd: { ru: 'экв. 4000–7000$ в месяц', he: 'שווה ערך ל-4000–7000$ בחודש', en: 'equiv. 4000–7000$ / mo' } },
+      finance: { nis: '10000–17000₪', usd: { ru: 'экв. 2700–4600$ в месяц', he: 'שווה ערך ל-2700–4600$ בחודש', en: 'equiv. 2700–4600$ / mo' } },
+      ulpan_pro: { nis: '10000–20000₪', usd: { ru: 'экв. 2700–5400$ в месяц', he: 'שווה ערך ל-2700–5400$ בחודש', en: 'equiv. 2700–5400$ / mo' } }
+    };
+
+    const statuses = {
+      olim: {
+        badge: { ru: 'до 80% (7000₪)', he: 'עד 80% (7000₪)', en: 'up to 80% (7000₪)' },
+        main: { ru: 'до 80% (до 7000₪ / 1900$)', he: 'עד 80% (עד 7000₪ / 1900$)', en: 'up to 80% (up to 7000₪ / 1900$)' }
+      },
+      pikadon: {
+        badge: { ru: 'до 100% Пикадон', he: 'עד 100% פיקדון', en: 'up to 100% Pikadon' },
+        main: { ru: 'до 100% (Пикадон ЦАХАЛ)', he: 'עד 100% (פיקדון צבאי מלא)', en: 'up to 100% (IDF Pikadon)' }
+      },
+      toshav: {
+        badge: { ru: 'до 80% (7000₪)', he: 'עד 80% (7000₪)', en: 'up to 80% (7000₪)' },
+        main: { ru: 'до 80% (до 7000₪ / 1900$)', he: 'עד 80% (עד 7000₪ / 1900$)', en: 'up to 80% (up to 7000₪ / 1900$)' }
+      },
+      citizen: {
+        badge: { ru: 'Грант до 25%', he: 'מלגה עד 25%', en: 'Up to 25% Grant' },
+        main: { ru: 'до 25% (Грант + рассрочка)', he: 'עד 25% (מלגה + פריסת תשלומים)', en: 'up to 25% (Grant + Installments)' }
+      }
+    };
+
+    const i18n = {
+      ru: {
+        nav_subtitle: 'מכללת U-Time • Сеть колледжей IT, AI, GEO/AEO/SEO и Карьеры',
+        nav_home: 'Главная Витрина',
+        nav_offer: 'Калькулятор Ваучера 80%',
+        nav_audit: 'Аудит & Рост (+265%)',
+        off_badge: 'Официальная субсидия gov.il • До 80% (7000₪) от Министерства алии и до 100% Пикадон',
+        off_title_1: 'Рассчитайте вашу субсидию до 80%–100% в U-Time College и выйдите на зарплату',
+        off_title_sal: '13000–26000₪ (3500–7000$)',
+        off_desc: 'Колледж U-Time действует под эгидой Министерства алии и интеграции и насчитывает более 30 филиалов по всему Израилю. Мы выдаём официальное письменное обязательство трудоустройства (התחייבות להשמה בעבודה) для быстрого одобрения ваучера до 7000₪!',
+        off_img_cap: '85% практики + Помощь с трудоустройством (92% выпускников в штате)',
+        calc_lbl_1: '1. Выберите ваш статус для расчета субсидии:',
+        st_1_t: 'Олим Хадашим (до 10 лет)',
+        st_1_d: 'Гос. ваучер до 7000₪ (1900$) после ульпана Алеф',
+        st_2_t: 'Солдат (Пикадон ЦАХАЛ)',
+        st_2_d: 'Оплата до 100% напрямую из армейского фонда',
+        st_3_t: 'Тошав Хозер (до 2 лет)',
+        st_3_d: 'Ваучер Министерства алии до 7000₪ (1900$)',
+        st_4_t: 'Гражданин Израиля',
+        st_4_d: 'Грант U-Time College + удобная рассрочка',
+        calc_lbl_2: '2. Выберите современную программу обучения (85% практики):',
+        opt_ai: 'Курсы обучения AI, Digital-Маркетингу и Трафику (GEO / AEO / SEO)',
+        opt_qa: 'QA Software Tester + AI-Тестирование ПО',
+        opt_and: 'Мобильные приложения (Android), Настольные, Веб-приложения, Серверы и Игры',
+        opt_fin: 'Бухгалтерия (ступени 1+2) и Расчет зарплат (Хешеб Схар)',
+        opt_ulp: 'Профессиональные Ульпаны, Косметология и Прикладные специальности',
+        res_top: 'Ваша субсидия и доход после курса',
+        res_cov_t: 'Государственное покрытие обучения:',
+        res_sal_t: 'Стартовая зарплата выпускника:',
+        res_btn: 'Забронировать ваучер в WhatsApp (055-994-5112)',
+        succ_tag: '92% помощь с трудоустройством • 30+ городов',
+        succ_t: '«Училась рядом с домом в Ришон-ле-Ционе по ваучеру 80% (7000₪) — через 4 месяца вышла на 16500₪!»',
+        succ_d: 'Консультанты U-Time College помогли быстро оформить ваучер от Министерства алии. Благодаря двуязычному обучению (русский + иврит) и 85% практики я без страха прошла собеседование в израильскую компанию!'
+      },
+      he: {
+        nav_subtitle: 'מכללת U-Time • רשת מכללות להייטק, AI, שיווק GEO/AEO/SEO וקריירה',
+        nav_home: 'ראשי',
+        nav_offer: 'מחשבון שובר 80%',
+        nav_audit: 'אודיט וצמיחה (+265%)',
+        off_badge: 'סבסוד רשמי gov.il • עד 80% (7000₪) ממשרד הקליטה ועד 100% פיקדון צבאי',
+        off_title_1: 'חשבו את המימון שלכם עד 80%–100% ב-U-Time College וצאו לשכר של',
+        off_title_sal: '13000–26000₪ (3500–7000$)',
+        off_desc: 'מכללת U-Time פועלת בחסות משרד העלייה והקליטה ומונה מעל 30 סניפים בישראל. אנו מעניקים התחייבות כתובה להשמה בעבודה לאישור מהיר של השובר עד 7000₪!',
+        off_img_cap: '85% פרקטיקה + סיוע בהשמה לעבודה (92% מהבוגרים משתלבים בתעשייה)',
+        calc_lbl_1: '1. בחרו את הסטטוס שלכם לחישוב המימון:',
+        st_1_t: 'עולים חדשים (עד 10 שנים)',
+        st_1_d: 'שובר ממשלתי עד 7000₪ (1900$) לבוגרי אולפן א׳',
+        st_2_t: 'חיילים משוחררים (פיקדון)',
+        st_2_d: 'מימון עד 100% ישירות מכספי הפיקדון הצבאי',
+        st_3_t: 'תושב חוזר (עד שנתיים)',
+        st_3_d: 'שובר משרד העלייה והקליטה עד 7000₪ (1900$)',
+        st_4_t: 'אזרח ישראל',
+        st_4_d: 'מלגת לימודים של U-Time College + פריסת תשלומים',
+        calc_lbl_2: '2. בחרו תוכנית לימודים מודרנית (85% פרקטיקה):',
+        opt_ai: 'קורסי AI, שיווק דיגיטלי והזרמת טראפיק (GEO / AEO / SEO)',
+        opt_qa: 'בודק תוכנה QA Software Tester + בדיקות AI',
+        opt_and: 'אפליקציות מובייל (אנדרואיד), שולחן עבודה, ווב, שרתים ומשחקים',
+        opt_fin: 'הנהלת חשבונות (סוג 1+2) וחשבות שכר',
+        opt_ulp: 'אולפנים מקצועיים, קוסמטיקה ומקצועות מעשיים',
+        res_top: 'המימון והשכר הצפוי שלכם',
+        res_cov_t: 'כיסוי ממשלתי לשכר הלימוד:',
+        res_sal_t: 'שכר התחלתי לבוגר:',
+        res_btn: 'שריינו שובר ב-WhatsApp (055-994-5112)',
+        succ_tag: '92% סיוע בהשמה • 30+ ערים',
+        succ_t: '״למדתי קרוב לבית בראשון לציון עם שובר 80% (7000₪) — תוך 4 חודשים התחלתי להרוויח 16500₪!״',
+        succ_d: 'יועצי U-Time College עזרו לי להסדיר במהירות את השובר ממשרד הקליטה. בזכות הלימוד הדו-לשוני ו-85% פרקטיקה עברתי בהצלחה את ראיון העבודה!'
+      },
+      en: {
+        nav_subtitle: 'מכללת U-Time • 30+ Campuses for IT, AI, GEO/AEO/SEO & Career',
+        nav_home: 'Home Showcase',
+        nav_offer: '80% Voucher Calculator',
+        nav_audit: 'Audit & Growth (+265%)',
+        off_badge: 'Official gov.il Subsidy • Up to 80% (7000₪) Ministry Voucher & 100% IDF Pikadon',
+        off_title_1: 'Calculate your up to 80%–100% subsidy at U-Time College and launch a career paying',
+        off_title_sal: '13000–26000₪ (3500–7000$)',
+        off_desc: 'U-Time College operates under the Ministry of Aliyah across 30+ campuses in Israel. We issue the official written job placement commitment (התחייבות להשמה בעבודה) for fast approval of your 7000₪ voucher!',
+        off_img_cap: '85% practice + Job placement assistance (92% graduate employment rate)',
+        calc_lbl_1: '1. Select your status in Israel for subsidy calculation:',
+        st_1_t: 'Olim Chadashim (up to 10 yrs)',
+        st_1_d: 'State voucher up to 7000₪ (1900$) after Ulpan Alef',
+        st_2_t: 'Discharged Soldier (Pikadon)',
+        st_2_d: 'Up to 100% paid directly from IDF Pikadon',
+        st_3_t: 'Toshav Chozer (up to 2 yrs)',
+        st_3_d: 'Ministry of Aliyah voucher up to 7000₪ (1900$)',
+        st_4_t: 'Israeli Citizen',
+        st_4_d: 'U-Time College grant + flexible installments',
+        calc_lbl_2: '2. Choose a modern training program (85% practice):',
+        opt_ai: 'AI Engineering, Digital Marketing & Traffic Courses (GEO / AEO / SEO)',
+        opt_qa: 'QA Software Tester + AI Test Automation',
+        opt_and: 'Mobile Apps (Android), Desktop Apps, Web Apps, Servers & Games',
+        opt_fin: 'Bookkeeping (Levels 1+2) & Payroll Accounting',
+        opt_ulp: 'Specialized Hebrew Ulpans, Cosmetology & Licensed Trades',
+        res_top: 'Your Subsidy & Graduate Income',
+        res_cov_t: 'State Tuition Coverage:',
+        res_sal_t: 'Projected Starting Salary:',
+        res_btn: 'Reserve Voucher on WhatsApp (055-994-5112)',
+        succ_tag: '92% placement support • 30+ cities',
+        succ_t: '“I studied near home in Rishon LeZion with an 80% (7000₪) voucher—within 4 months I was earning 16500₪!”',
+        succ_d: 'U-Time College advisors helped me quickly process my Ministry of Aliyah voucher. Thanks to bilingual instruction and 85% hands-on practice, I aced my Israeli job interview!'
+      }
+    };
+
+    function selectStatus(st) {
+      currentStatus = st;
+      ['olim', 'pikadon', 'toshav', 'citizen'].forEach(k => {
+        const el = document.getElementById('st-' + k);
+        if (!el) return;
+        el.className = k === st
+          ? 'p-3.5 rounded-xl border-2 border-sky-400 bg-violet-600/25 text-left text-white'
+          : 'p-3.5 rounded-xl border border-violet-400/30 bg-slate-900/60 text-left text-sky-100';
+      });
+      updateCalc();
+    }
+
+    function updateCalc() {
+      const tr = document.getElementById('track-sel')?.value || 'ai_geo';
+      const tInfo = tracks[tr] || tracks.ai_geo;
+      const sInfo = statuses[currentStatus] || statuses.olim;
+      document.getElementById('res-cov-badge').textContent = sInfo.badge[currentLang];
+      document.getElementById('res-cov-main').textContent = sInfo.main[currentLang];
+      document.getElementById('res-sal-nis').textContent = tInfo.nis;
+      document.getElementById('res-sal-usd').textContent = tInfo.usd[currentLang];
+    }
+
+    function setLanguage(lang) {
+      if (!i18n[lang]) lang = 'ru';
+      currentLang = lang;
+      localStorage.setItem('utime_lang', lang);
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'he' ? 'rtl' : 'ltr';
+      ['ru', 'he', 'en'].forEach(c => {
+        const b = document.getElementById('lang-btn-' + c);
+        if (b) b.className = c === lang
+          ? 'px-2.5 py-1 rounded-lg text-xs font-bold transition-all bg-gradient-to-r from-violet-600 to-sky-500 text-white shadow'
+          : 'px-2.5 py-1 rounded-lg text-xs font-bold transition-all text-sky-200 hover:text-white';
+      });
+      const dict = i18n[lang];
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const k = el.getAttribute('data-i18n');
+        if (dict[k]) el.textContent = dict[k];
+      });
+      updateCalc();
+    }
+
+    function applyTheme(theme) {
+      const htmlEl = document.documentElement;
+      const sun = document.getElementById('theme-icon-sun');
+      const moon = document.getElementById('theme-icon-moon');
+      if (theme === 'light') {
+        htmlEl.classList.remove('dark'); htmlEl.classList.add('light');
+        if (sun) sun.classList.remove('hidden'); if (moon) moon.classList.add('hidden');
+      } else {
+        htmlEl.classList.remove('light'); htmlEl.classList.add('dark');
+        if (sun) sun.classList.add('hidden'); if (moon) moon.classList.remove('hidden');
+      }
+    }
+
+    function toggleTheme() {
+      const cur = localStorage.getItem('utime_theme') || 'dark';
+      const next = cur === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('utime_theme', next);
+      applyTheme(next);
+    }
+
+    function sendOfferWhatsApp() {
+      const nm = (document.getElementById('u-name')?.value || '').trim();
+      const ph = (document.getElementById('u-phone')?.value || '').trim();
+      const sel = document.getElementById('track-sel');
+      const trText = sel ? sel.options[sel.selectedIndex].text : 'AI / GEO / QA';
+      const cov = statuses[currentStatus].main[currentLang];
+      const msg = `U-Time College (1-700-70-80-19) — Бронь ваучера:\nИмя: ${nm || 'Кандидат'}\nТелефон: ${ph || 'В чате'}\nКурс: ${trText}\nСубсидия: ${cov}`;
+      window.open('https://wa.me/972559945112?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      applyTheme(localStorage.getItem('utime_theme') || 'dark');
+      setLanguage(currentLang);
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    });
+  </script>
+</body>
+</html>

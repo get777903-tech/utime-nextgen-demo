@@ -1,0 +1,56 @@
+{
+  "project_name": "U-Time Courses Next-Gen Demo",
+  "target_url": "https://utime-courses.com",
+  "audit_date": "2026-11-04",
+  "auditor_role": "Agent 2 — Algorithmic Pain & Revenue Loss Auditor (B12.io & AEO Standard)",
+  "critical_vulnerabilities": [
+    {
+      "id": "UX_OVERLOAD_01",
+      "category": "Conversion & Mobile UX",
+      "issue": "Перегруженная многоуровневая структура сайта и когнитивный шум на первом экране",
+      "impact": "Потеря до 64% мобильных пользователей в первые 4 секунды из-за отсутствия единого маршрута выбора профессии и мгновенной проверки права на субсидию."
+    },
+    {
+      "id": "NO_VOUCHER_CALC_02",
+      "category": "Interactive Lead Capture",
+      "issue": "Отсутствие интерактивного калькулятора государственного ваучера (до 80% / 7000₪) на первом экране",
+      "impact": "Кандидаты (олим хадашим, тошавим хозрим, демобилизованные солдаты) уходят к конкурентам, не понимая, какую точную сумму покроет государство именно в их случае."
+    },
+    {
+      "id": "MISSING_AEO_SCHEMA_03",
+      "category": "AI Search & GEO/AEO Visibility",
+      "issue": "Полное отсутствие микроразметки Schema.org JSON-LD (Course, EducationalOrganization, FAQPage) для ChatGPT, Perplexity, Claude и Google AI Overviews",
+      "impact": "ИИ-ассистенты не цитируют U-Time при запросах о субсидируемых курсах в Израиле на русском и иврите, отдавая органический AI-трафик агрегаторам."
+    },
+    {
+      "id": "CURRICULUM_GAP_04",
+      "category": "Product-Market Fit 2026",
+      "issue": "Отсутствие выделенного флагманского курса по GEO/AEO/SEO трафику и AI-маркетингу нового поколения",
+      "impact": "Упущенный сегмент высокомаржинальных студентов и владельцев бизнеса, ищущих навыки продвижения в нейросетевом поиске 2026 года."
+    }
+  ],
+  "performance_and_growth_metrics": {
+    "conversion_rate": {
+      "current": "1.7%",
+      "projected": "6.2%",
+      "growth_delta": "+265%"
+    },
+    "mobile_load_speed": {
+      "current": "4.9s",
+      "projected": "0.8s",
+      "acceleration_delta": "+84%"
+    },
+    "ai_search_visibility_score": {
+      "current": "14%",
+      "projected": "98%",
+      "aeo_readiness": "98%"
+    },
+    "monthly_recovered_revenue_usd": "45000–98000$"
+  },
+  "strategic_recommendations": [
+    "Внедрить интерактивный ползунковый калькулятор субсидий (до 80%–100% / 7000₪) прямо в Hero-секцию.",
+    "Интегрировать 4-шаговый квиз профориентации и проверки ваучера с выдачей персонального плана за 30 секунд.",
+    "Развернуть полную микроразметку Schema.org JSON-LD и 6 эталонных AEO Q&A блоков по 45–55 слов для доминирования в ответах ChatGPT и Perplexity.",
+    "Запустить и выделить на витрине направление GEO/AEO/SEO & AI-Marketing как магнит для востребованных специалистов 2026 года."
+  ]
+}

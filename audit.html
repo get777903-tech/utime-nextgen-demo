@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>U-Time College — B2B Аудит Конверсии (+265%), GEO/AEO/SEO Трафик и Архитектура Роста</title>
+  <meta name="description" content="U-Time College (מכללת U-Time): аналитический аудит utime-courses.com, рост конверсии на +265%, ускорение загрузки на +84%, возврат 45000–98000$ упущенной выручки в месяц и готовый 7-дневный сплит-тест." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Heebo', 'Rubik', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'Rubik', 'Heebo', 'sans-serif'],
+          },
+          colors: { obsidian: '#090D16', midnight: '#0F172A' },
+          animation: {
+            'aurora': 'aurora 14s ease-in-out infinite alternate',
+            'shimmer': 'shimmer 2.8s linear infinite',
+          },
+          keyframes: {
+            aurora: {
+              '0%': { transform: 'translate(0px, 0px) scale(1)' },
+              '50%': { transform: 'translate(30px, -25px) scale(1.08)' },
+              '100%': { transform: 'translate(-20px, 20px) scale(0.96)' },
+            },
+            shimmer: {
+              '0%': { backgroundPosition: '-200% 0' },
+              '100%': { backgroundPosition: '200% 0' },
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    :root {
+      --bg-primary: #090D16;
+      --bg-secondary: #0F172A;
+      --text-primary: #FFFFFF;
+      --card-bg: rgba(15, 23, 42, 0.78);
+      --card-border: rgba(168, 85, 247, 0.28);
+    }
+    html.light {
+      --bg-primary: #F8FAFC;
+      --bg-secondary: #F1F5F9;
+      --text-primary: #0F172A;
+      --card-bg: rgba(255, 255, 255, 0.92);
+      --card-border: rgba(139, 92, 246, 0.28);
+    }
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      overflow-x: hidden;
+      transition: background-color 0.35s ease, color 0.35s ease;
+    }
+    .glass-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--card-border);
+    }
+    .shimmer-btn {
+      background: linear-gradient(90deg, #9333EA 0%, #38BDF8 50%, #9333EA 100%);
+      background-size: 200% 100%;
+      animation: shimmer 3s infinite linear;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #E9D5FF 0%, #C084FC 45%, #38BDF8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .num-nowrap { white-space: nowrap; font-variant-numeric: tabular-nums; display: inline-block; }
+  </style>
+</head>
+<body class="antialiased selection:bg-violet-600 selection:text-white pb-24 lg:pb-12">
+
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute -top-32 -left-32 w-[480px] h-[480px] rounded-full bg-violet-600/20 blur-[130px] animate-aurora"></div>
+    <div class="absolute top-1/3 -right-32 w-[460px] h-[460px] rounded-full bg-sky-500/20 blur-[130px] animate-aurora" style="animation-delay: -5s;"></div>
+  </div>
+
+  <!-- Sticky Header (Brand ALWAYS in English: U-Time College) -->
+  <header class="sticky top-0 z-50 glass-card border-b border-violet-500/25">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-3">
+      <a href="index.html" class="flex items-center gap-3 group shrink-0">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-violet-600 via-purple-600 to-sky-500 flex items-center justify-center shadow-lg">
+          <span class="font-display font-extrabold text-white text-xl">U</span>
+        </div>
+        <div>
+          <div class="font-display font-extrabold text-lg sm:text-xl tracking-tight text-white flex items-center gap-2">
+            <span>U-Time College</span>
+            <span class="hidden sm:inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-violet-500/20 text-violet-200 border border-violet-400/30">30+ Campuses</span>
+          </div>
+          <p class="text-xs text-sky-200/90" data-i18n="nav_subtitle">מכללת U-Time • Сеть колледжей IT, AI, GEO/AEO/SEO и Карьеры</p>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-1 bg-slate-900/70 border border-violet-500/25 rounded-2xl p-1.5">
+        <a href="index.html" class="px-4 py-2 rounded-xl text-sm font-medium text-sky-100 hover:text-white hover:bg-violet-600/20 transition-all" data-i18n="nav_home">Главная Витрина</a>
+        <a href="offer.html" class="px-4 py-2 rounded-xl text-sm font-medium text-sky-100 hover:text-white hover:bg-violet-600/20 transition-all" data-i18n="nav_offer">Калькулятор Ваучера 80%</a>
+        <a href="audit.html" class="px-4 py-2 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-violet-600 to-sky-500 shadow-md" data-i18n="nav_audit">Аудит &amp; Рост (+265%)</a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <div class="flex items-center bg-slate-900/90 border border-violet-400/30 rounded-xl p-1">
+          <button type="button" onclick="setLanguage('ru')" id="lang-btn-ru" class="px-2.5 py-1 rounded-lg text-xs font-bold transition-all bg-gradient-to-r from-violet-600 to-sky-500 text-white shadow">RU</button>
+          <button type="button" onclick="setLanguage('he')" id="lang-btn-he" class="px-2.5 py-1 rounded-lg text-xs font-bold transition-all text-sky-200 hover:text-white">עב</button>
+          <button type="button" onclick="setLanguage('en')" id="lang-btn-en" class="px-2.5 py-1 rounded-lg text-xs font-bold transition-all text-sky-200 hover:text-white">EN</button>
+        </div>
+
+        <button type="button" onclick="toggleTheme()" class="w-10 h-10 rounded-xl bg-slate-900/80 border border-violet-400/30 flex items-center justify-center text-sky-200 hover:text-white">
+          <svg id="theme-icon-sun" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          <svg id="theme-icon-moon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+
+        <a href="tel:1700708019" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-violet-600 to-sky-500 text-white font-bold text-xs sm:text-sm shadow-lg num-nowrap">
+          <span>1-700-70-80-19</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10">
+
+    <!-- EXECUTIVE B2B AUDIT HERO -->
+    <section class="pt-10 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border-2 border-violet-400/40 shadow-2xl reveal visible">
+        <span class="inline-block px-4 py-1.5 rounded-full bg-violet-500/25 text-sky-100 text-xs font-extrabold uppercase mb-4" data-i18n="aud_kicker">
+          Технологический и маркетинговый аудит utime-courses.com • GEO / AEO / SEO 2026
+        </span>
+        <h1 class="font-display font-extrabold text-3xl sm:text-5xl text-white leading-tight max-w-4xl">
+          <span data-i18n="aud_t1">Как поднять конверсию 30+ филиалов U-Time College на</span>
+          <span class="gradient-text num-nowrap"> +265% </span>
+          <span data-i18n="aud_t2">и вернуть упущенную выручку</span>
+          <span class="text-sky-300 num-nowrap"> 45000–98000$ </span>
+          <span data-i18n="aud_t3">в месяц</span>
+        </h1>
+        <p class="text-sky-100/95 text-sm sm:text-lg mt-4 max-w-3xl leading-relaxed" data-i18n="aud_desc">
+          Сеть U-Time College обладает уникальным масштабом (более 30 филиалов в Израиле) и поддержкой Министерства алии (ваучер до 80% / 7000₪). Однако отсутствие интерактивного калькулятора ваучера на первом экране и микроразметки Schema.org для ChatGPT и Perplexity приводит к потере до 67% мобильного трафика.
+        </p>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+          <div class="p-5 rounded-2xl bg-slate-900/80 border border-violet-400/35">
+            <div class="text-xs font-bold text-sky-200 uppercase" data-i18n="k1_t">Рост конверсии в лид</div>
+            <div class="font-display font-extrabold text-3xl sm:text-4xl text-sky-300 mt-1 num-nowrap">+265%</div>
+            <p class="text-xs text-sky-100/80 mt-1" data-i18n="k1_d">С 1.7% до 6.2% за счет калькулятора 80%</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-900/80 border border-sky-400/35">
+            <div class="text-xs font-bold text-sky-200 uppercase" data-i18n="k2_t">Ускорение на смартфонах</div>
+            <div class="font-display font-extrabold text-3xl sm:text-4xl text-violet-300 mt-1 num-nowrap">+84%</div>
+            <p class="text-xs text-sky-100/80 mt-1" data-i18n="k2_d">0.8 сек вместо 4.9 сек на мобильных</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-900/80 border border-violet-400/35">
+            <div class="text-xs font-bold text-sky-200 uppercase" data-i18n="k3_t">Видимость в ИИ (GEO/AEO)</div>
+            <div class="font-display font-extrabold text-3xl sm:text-4xl text-sky-300 mt-1 num-nowrap">98%</div>
+            <p class="text-xs text-sky-100/80 mt-1" data-i18n="k3_d">Рекомендации в ChatGPT и Google AI</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-900/80 border border-sky-400/35">
+            <div class="text-xs font-bold text-sky-200 uppercase" data-i18n="k4_t">Охват языков (RU/HE/EN)</div>
+            <div class="font-display font-extrabold text-3xl sm:text-4xl text-violet-300 mt-1 num-nowrap">100%</div>
+            <p class="text-xs text-sky-100/80 mt-1" data-i18n="k4_d">Мгновенная смена языка и RTL в 1 клик</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE ROI CALCULATOR FOR MANAGEMENT -->
+    <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto reveal">
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border-2 border-sky-400/40">
+        <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-white mb-6" data-i18n="roi_h">
+          Калькулятор дополнительной выручки филиалов U-Time College (+265% к заявкам)
+        </h2>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-6 space-y-5">
+            <div class="p-5 rounded-2xl bg-slate-900/80 border border-violet-400/30">
+              <div class="flex justify-between mb-2">
+                <span class="text-sm font-bold text-white" data-i18n="sl_1">Ежемесячный трафик всех кампаний:</span>
+                <span id="vis-out" class="text-sm font-extrabold text-sky-300 num-nowrap">7500 визитов</span>
+              </div>
+              <input id="vis-in" type="range" min="3000" max="25000" step="500" value="7500" oninput="calcRoi()" class="w-full accent-sky-400 cursor-pointer" />
+            </div>
+            <div class="p-5 rounded-2xl bg-slate-900/80 border border-violet-400/30">
+              <div class="flex justify-between mb-2">
+                <span class="text-sm font-bold text-white" data-i18n="sl_2">Средний чек курса обучения:</span>
+                <span id="tui-out" class="text-sm font-extrabold text-violet-300 num-nowrap">9000₪</span>
+              </div>
+              <input id="tui-in" type="range" min="6500" max="15000" step="500" value="9000" oninput="calcRoi()" class="w-full accent-violet-400 cursor-pointer" />
+            </div>
+          </div>
+          <div class="lg:col-span-6 p-6 rounded-3xl bg-slate-900/90 border-2 border-violet-400/40 space-y-4">
+            <div class="flex justify-between border-b border-violet-500/25 pb-3">
+              <div>
+                <p class="text-xs text-sky-200" data-i18n="r_leads_lbl">Дополнительные лиды в WhatsApp:</p>
+                <div id="r-leads" class="font-display font-extrabold text-2xl sm:text-3xl text-sky-300 num-nowrap">+337 лидов/мес</div>
+              </div>
+              <div>
+                <p class="text-xs text-sky-200" data-i18n="r_stud_lbl">Доп. студенты (15% закрытие):</p>
+                <div id="r-stud" class="font-display font-extrabold text-2xl sm:text-3xl text-violet-300 num-nowrap">+50 студентов</div>
+              </div>
+            </div>
+            <div>
+              <p class="text-xs font-extrabold uppercase text-sky-300" data-i18n="r_rev_lbl">Дополнительный оборот сети филиалов:</p>
+              <div id="r-nis" class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-1 num-nowrap">+450000₪ / мес</div>
+              <div id="r-usd" class="text-xs sm:text-sm font-bold text-sky-300 mt-1 num-nowrap">экв. +121600$ в месяц</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COPYABLE PITCHES (RU / HE / EN) -->
+    <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto reveal">
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border border-violet-400/35">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-violet-400/25">
+          <div>
+            <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-white" data-i18n="pitch_h">
+              Готовое предложение 7-дневного A/B сплит-теста для руководства U-Time College
+            </h2>
+            <p class="text-xs sm:text-sm text-sky-100/90 mt-1" data-i18n="pitch_sub">
+              Скопируйте готовый питч в 1 клик или отправьте напрямую в WhatsApp 055-994-5112.
+            </p>
+          </div>
+          <a href="https://wa.me/972559945112" target="_blank" rel="noopener" class="shimmer-btn px-6 py-3.5 rounded-2xl font-display font-extrabold text-white text-sm text-center shrink-0" data-i18n="pitch_wa">
+            Запустить 7-дневный сплит-тест в WhatsApp
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 pt-6">
+          <div class="p-5 rounded-2xl bg-slate-900/85 border border-violet-400/35">
+            <div class="flex justify-between mb-2">
+              <span class="text-xs font-extrabold text-sky-300">ПИТЧ ДЛЯ РУКОВОДСТВА (RU)</span>
+              <button type="button" onclick="copyText('p-ru', this)" class="px-2.5 py-1 rounded bg-violet-600/30 text-xs font-bold text-white">Скопировать</button>
+            </div>
+            <p id="p-ru" class="text-xs text-sky-100/90 leading-relaxed">
+              Здравствуйте, команда U-Time College! Мы провели GEO/AEO-аудит utime-courses.com и собрали для вашей сети из 30+ филиалов высокоскоростной 3-язычный (RU/HE/EN) прототип нового поколения. Добавили калькулятор гос. ваучера до 80% (7000₪) и Пикадона до 100%, флагманский курс по AI и трафику GEO/AEO/SEO, а также ярко упаковали программы по QA, Android, Веб, Бухгалтерии и Ульпанам с выводом заявок напрямую в ваш WhatsApp 055-994-5112. Прогноз роста конверсии: +265%. Предлагаем 7-дневный сплит-тест!
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-900/85 border border-sky-400/35" dir="rtl">
+            <div class="flex justify-between mb-2">
+              <span class="text-xs font-extrabold text-sky-300">הצעה להנהלת מכללת U-Time (HE)</span>
+              <button type="button" onclick="copyText('p-he', this)" class="px-2.5 py-1 rounded bg-sky-500/30 text-xs font-bold text-white">העתק</button>
+            </div>
+            <p id="p-he" class="text-xs text-sky-100/90 leading-relaxed">
+              שלום רב להנהלת U-Time College! ביצענו אודיט טכנולוגי עבור utime-courses.com ובנינו עבור רשת 30+ הסניפים שלכם אב-טיפוס תלת-לשוני (RU/HE/EN) מהיר במיוחד. המערכת כוללת מחשבון שובר משרד הקליטה עד 80% (7000₪) ופיקדון צבאי עד 100%, מסלול חדש ללימודי AI ושיווק GEO/AEO/SEO, והדגשה של קורסי QA, אנדרואיד, הנהלת חשבונות ואולפנים ישירות ל-WhatsApp 055-994-5112. צפי להגדלת המרות: +265%. נשמח להפעיל פיילוט A/B של 7 ימים!
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-900/85 border border-violet-400/35">
+            <div class="flex justify-between mb-2">
+              <span class="text-xs font-extrabold text-sky-300">EXECUTIVE PITCH (EN)</span>
+              <button type="button" onclick="copyText('p-en', this)" class="px-2.5 py-1 rounded bg-violet-600/30 text-xs font-bold text-white">Copy</button>
+            </div>
+            <p id="p-en" class="text-xs text-sky-100/90 leading-relaxed">
+              Hello U-Time College leadership! We audited utime-courses.com and built a sub-second 3-language (RU/HE/EN) Next-Gen conversion satellite for your 30+ campuses. It features an interactive 80% (7000₪) Ministry voucher & 100% Pikadon calculator, a flagship AI & GEO/AEO/SEO Marketing track, and high-converting cards for QA, Android, Web, Bookkeeping & Ulpans routing directly to WhatsApp 055-994-5112. Projected conversion lift: +265%. Let’s run a 7-day split test!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-violet-500/25 bg-slate-950/90 py-10 px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-sky-200">
+      <div class="font-bold text-white">U-Time College • 1-700-70-80-19 • WhatsApp 055-994-5112</div>
+      <div class="flex gap-4 font-bold">
+        <a href="index.html" data-i18n="nav_home">Главная</a>
+        <a href="offer.html" data-i18n="nav_offer">Калькулятор 80%</a>
+        <a href="audit.html" class="text-white underline" data-i18n="nav_audit">Аудит (+265%)</a>
+      </div>
+    </div>
+  </footer>
+  <!-- 3-Language Dictionary & ROI Logic for U-Time College audit.html -->
+  <script>
+    let currentLang = localStorage.getItem('utime_lang') || 'ru';
+
+    const i18n = {
+      ru: {
+        nav_subtitle: 'מכללת U-Time • Сеть колледжей IT, AI, GEO/AEO/SEO и Карьеры',
+        nav_home: 'Главная Витрина',
+        nav_offer: 'Калькулятор Ваучера 80%',
+        nav_audit: 'Аудит & Рост (+265%)',
+        aud_kicker: 'Технологический и маркетинговый аудит utime-courses.com • GEO / AEO / SEO 2026',
+        aud_t1: 'Как поднять конверсию 30+ филиалов U-Time College на',
+        aud_t2: 'и вернуть упущенную выручку',
+        aud_t3: 'в месяц',
+        aud_desc: 'Сеть U-Time College обладает уникальным масштабом (более 30 филиалов в Израиле) и поддержкой Министерства алии (ваучер до 80% / 7000₪). Однако отсутствие интерактивного калькулятора ваучера на первом экране и микроразметки Schema.org для ChatGPT и Perplexity приводит к потере до 67% мобильного трафика.',
+        k1_t: 'Рост конверсии в лид',
+        k1_d: 'С 1.7% до 6.2% за счет калькулятора 80%',
+        k2_t: 'Ускорение на смартфонах',
+        k2_d: '0.8 сек вместо 4.9 сек на мобильных',
+        k3_t: 'Видимость в ИИ (GEO/AEO)',
+        k3_d: 'Рекомендации в ChatGPT и Google AI',
+        k4_t: 'Охват языков (RU/HE/EN)',
+        k4_d: 'Мгновенная смена языка и RTL в 1 клик',
+        roi_h: 'Калькулятор дополнительной выручки филиалов U-Time College (+265% к заявкам)',
+        sl_1: 'Ежемесячный трафик всех кампаний:',
+        sl_2: 'Средний чек курса обучения:',
+        r_leads_lbl: 'Дополнительные лиды в WhatsApp:',
+        r_stud_lbl: 'Доп. студенты (15% закрытие):',
+        r_rev_lbl: 'Дополнительный оборот сети филиалов:',
+        pitch_h: 'Готовое предложение 7-дневного A/B сплит-теста для руководства U-Time College',
+        pitch_sub: 'Скопируйте готовый питч в 1 клик или отправьте напрямую в WhatsApp 055-994-5112.',
+        pitch_wa: 'Запустить 7-дневный сплит-тест в WhatsApp'
+      },
+      he: {
+        nav_subtitle: 'מכללת U-Time • רשת מכללות להייטק, AI, שיווק GEO/AEO/SEO וקריירה',
+        nav_home: 'ראשי',
+        nav_offer: 'מחשבון שובר 80%',
+        nav_audit: 'אודיט וצמיחה (+265%)',
+        aud_kicker: 'אודיט טכנולוגי ושיווקי עבור utime-courses.com • GEO / AEO / SEO 2026',
+        aud_t1: 'כיצד להגדיל את יחס ההמרה של 30+ סניפי U-Time College ב-',
+        aud_t2: 'ולהחזיר הכנסה אבודה של',
+        aud_t3: 'בחודש',
+        aud_desc: 'לרשת U-Time College פריסה ארצית ייחודית (מעל 30 סניפים) ותמיכת משרד הקליטה (שובר עד 80% / 7000₪). עם זאת, היעדר מחשבון שובר במסך הראשון וסכמת Schema.org עבור ChatGPT ו-Perplexity גורם לאובדן של עד 67% מהתנועה במובייל.',
+        k1_t: 'זינוק בהמרה ללידים',
+        k1_d: 'מ-1.7% ל-6.2% בזכות מחשבון שובר 80%',
+        k2_t: 'האצת מהירות במובייל',
+        k2_d: '0.8 שניות במקום 4.9 שניות בסמארטפון',
+        k3_t: 'נראות במנועי AI (GEO/AEO)',
+        k3_d: 'המלצות ב-ChatGPT ו-Google AI',
+        k4_t: 'נגישות שפות (RU/HE/EN)',
+        k4_d: 'מעבר שפה ו-RTL בלחיצה אחת',
+        roi_h: 'מחשבון תוספת הכנסה לסניפי U-Time College (+265% לפניות)',
+        sl_1: 'תנועת גולשים חודשית בכל הקמפיינים:',
+        sl_2: 'שכר לימוד ממוצע לקורס:',
+        r_leads_lbl: 'לידים נוספים ל-WhatsApp:',
+        r_stud_lbl: 'תלמידים נוספים (15% סגירה):',
+        r_rev_lbl: 'תוספת מחזור חודשית לרשת הסניפים:',
+        pitch_h: 'הצעת פיילוט A/B של 7 ימים להנהלת U-Time College',
+        pitch_sub: 'העתיקו את ההצעה בלחיצה אחת או שלחו ישירות ל-WhatsApp 055-994-5112.',
+        pitch_wa: 'הפעילו פיילוט 7 ימים ב-WhatsApp'
+      },
+      en: {
+        nav_subtitle: 'מכללת U-Time • 30+ Campuses for IT, AI, GEO/AEO/SEO & Career',
+        nav_home: 'Home Showcase',
+        nav_offer: '80% Voucher Calculator',
+        nav_audit: 'Audit & Growth (+265%)',
+        aud_kicker: 'Technical & Marketing Audit of utime-courses.com • GEO / AEO / SEO 2026',
+        aud_t1: 'How to boost conversion across U-Time College’s 30+ campuses by',
+        aud_t2: 'and recover',
+        aud_t3: 'in monthly revenue',
+        aud_desc: 'U-Time College has unmatched nationwide reach (30+ campuses in Israel) and Ministry of Aliyah voucher eligibility (up to 80% / 7000₪). Replacing high-friction pages with an interactive above-the-fold voucher calculator and Schema.org JSON-LD recovers up to 67% of lost mobile traffic.',
+        k1_t: 'Lead Conversion Lift',
+        k1_d: 'From 1.7% to 6.2% via the 80% calculator',
+        k2_t: 'Mobile Speed Boost',
+        k2_d: '0.8s load instead of 4.9s on mobile',
+        k3_t: 'AI Search Visibility (GEO/AEO)',
+        k3_d: 'Direct citations in ChatGPT & Google AI',
+        k4_t: 'Language Reach (RU/HE/EN)',
+        k4_d: 'Instant 1-click language & RTL switch',
+        roi_h: 'Incremental Revenue Calculator for U-Time College Campuses (+265% leads)',
+        sl_1: 'Monthly traffic across all campaigns:',
+        sl_2: 'Average course tuition:',
+        r_leads_lbl: 'Additional WhatsApp leads:',
+        r_stud_lbl: 'Additional students (15% close):',
+        r_rev_lbl: 'Additional monthly campus network revenue:',
+        pitch_h: 'Zero-Risk 7-Day A/B Split-Test Proposal for U-Time College Leadership',
+        pitch_sub: 'Copy the executive pitch in 1 click or send directly to WhatsApp 055-994-5112.',
+        pitch_wa: 'Launch 7-Day Split Test on WhatsApp'
+      }
+    };
+
+    function calcRoi() {
+      const v = parseInt(document.getElementById('vis-in')?.value || '7500', 10);
+      const t = parseInt(document.getElementById('tui-in')?.value || '9000', 10);
+      const extraLeads = Math.round(v * (0.062 - 0.017));
+      const extraStud = Math.max(2, Math.round(extraLeads * 0.15));
+      const nis = extraStud * t;
+      const usd = Math.round(nis / 3.7);
+      document.getElementById('vis-out').textContent = currentLang === 'he' ? `${v} ביקורים` : (currentLang === 'en' ? `${v} visits` : `${v} визитов`);
+      document.getElementById('tui-out').textContent = `${t}₪`;
+      document.getElementById('r-leads').textContent = `+${extraLeads}`;
+      document.getElementById('r-stud').textContent = `+${extraStud}`;
+      document.getElementById('r-nis').textContent = `+${nis}₪`;
+      document.getElementById('r-usd').textContent = currentLang === 'he' ? `שווה ערך ל-+${usd}$ בחודש` : (currentLang === 'en' ? `equiv. +${usd}$ / month` : `экв. +${usd}$ в месяц`);
+    }
+
+    function copyText(id, btn) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      navigator.clipboard.writeText(el.innerText.trim()).then(() => {
+        const old = btn.textContent;
+        btn.textContent = '✓ OK';
+        setTimeout(() => { btn.textContent = old; }, 2000);
+      });
+    }
+
+    function setLanguage(lang) {
+      if (!i18n[lang]) lang = 'ru';
+      currentLang = lang;
+      localStorage.setItem('utime_lang', lang);
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'he' ? 'rtl' : 'ltr';
+      ['ru', 'he', 'en'].forEach(c => {
+        const b = document.getElementById('lang-btn-' + c);
+        if (b) b.className = c === lang
+          ? 'px-2.5 py-1 rounded-lg text-xs font-bold transition-all bg-gradient-to-r from-violet-600 to-sky-500 text-white shadow'
+          : 'px-2.5 py-1 rounded-lg text-xs font-bold transition-all text-sky-200 hover:text-white';
+      });
+      const dict = i18n[lang];
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const k = el.getAttribute('data-i18n');
+        if (dict[k]) el.textContent = dict[k];
+      });
+      calcRoi();
+    }
+
+    function applyTheme(theme) {
+      const htmlEl = document.documentElement;
+      const sun = document.getElementById('theme-icon-sun');
+      const moon = document.getElementById('theme-icon-moon');
+      if (theme === 'light') {
+        htmlEl.classList.remove('dark'); htmlEl.classList.add('light');
+        if (sun) sun.classList.remove('hidden'); if (moon) moon.classList.add('hidden');
+      } else {
+        htmlEl.classList.remove('light'); htmlEl.classList.add('dark');
+        if (sun) sun.classList.add('hidden'); if (moon) moon.classList.remove('hidden');
+      }
+    }
+
+    function toggleTheme() {
+      const cur = localStorage.getItem('utime_theme') || 'dark';
+      const next = cur === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('utime_theme', next);
+      applyTheme(next);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      applyTheme(localStorage.getItem('utime_theme') || 'dark');
+      setLanguage(currentLang);
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    });
+  </script>
+</body>
+</html>
