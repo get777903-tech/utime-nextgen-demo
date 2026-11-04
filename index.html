@@ -3,15 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-  <title>U-Time College — Ваучер до 80% (7000₪) и Пикадон до 100% | 30+ Филиалов в Израиле: AI, GEO/AEO/SEO, QA, Маркетинг и Карьера</title>
-  <meta name="description" content="U-Time College (מכללת U-Time): более 30 филиалов в Израиле и онлайн. Государственный ваучер до 80% (до 7000₪) от Министерства алии и до 100% Пикадон ЦАХАЛ. Курсы AI и GEO/AEO/SEO трафика, QA тестирование, Мобильные приложения для Android, Веб-приложения, Бухгалтерия 1+2 и Ульпаны иврита." />
+  <title>U-Time College — Тел.: 03-5757295 | Ваучер до 80% (7000₪) и Пикадон до 100% | Полный Каталог Курсов в 30+ Филиалах Израиля</title>
+  <meta name="description" content="U-Time College (מכללת U-Time) — Тел.: 03-5757295. Более 30 филиалов в Израиле и онлайн. Полный каталог курсов по ваучеру до 80% (до 7000₪): AI и GEO/AEO/SEO трафик, QA тестирование, Мобильные приложения для Android, Веб, Серверы, Игры, Бухгалтерия 1+2, Графический дизайн, Косметология и Ульпаны." />
 
-  <!-- Google Fonts: Inter, Plus Jakarta Sans, Heebo, Rubik -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -22,10 +20,7 @@
             sans: ['Inter', 'Heebo', 'Rubik', 'sans-serif'],
             display: ['Plus Jakarta Sans', 'Rubik', 'Heebo', 'sans-serif'],
           },
-          colors: {
-            obsidian: '#090D16',
-            midnight: '#0F172A',
-          },
+          colors: { obsidian: '#090D16', midnight: '#0F172A' },
           animation: {
             'aurora': 'aurora 14s ease-in-out infinite alternate',
             'shimmer': 'shimmer 2.8s linear infinite',
@@ -51,23 +46,21 @@
       --bg-primary: #090D16;
       --bg-secondary: #0F172A;
       --text-primary: #FFFFFF;
-      --text-secondary: #E0F2FE;
-      --card-bg: rgba(15, 23, 42, 0.78);
-      --card-border: rgba(168, 85, 247, 0.28);
+      --card-bg: rgba(15, 23, 42, 0.82);
+      --card-border: rgba(168, 85, 247, 0.30);
     }
     html.light {
       --bg-primary: #F8FAFC;
       --bg-secondary: #F1F5F9;
       --text-primary: #0F172A;
-      --text-secondary: #334155;
-      --card-bg: rgba(255, 255, 255, 0.92);
-      --card-border: rgba(139, 92, 246, 0.28);
+      --card-bg: rgba(255, 255, 255, 0.96);
+      --card-border: rgba(124, 58, 237, 0.32);
     }
     body {
       background-color: var(--bg-primary);
       color: var(--text-primary);
       overflow-x: hidden;
-      transition: background-color 0.35s ease, color 0.35s ease;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
     .glass-card {
       background: var(--card-bg);
@@ -75,152 +68,183 @@
       -webkit-backdrop-filter: blur(20px);
       border: 1px solid var(--card-border);
     }
-    html.light .glass-card {
-      box-shadow: 0 12px 32px -8px rgba(99, 102, 241, 0.12);
-    }
     .shimmer-btn {
-      background: linear-gradient(90deg, #9333EA 0%, #38BDF8 50%, #9333EA 100%);
+      background: linear-gradient(90deg, #7E22CE 0%, #0284C7 50%, #7E22CE 100%);
       background-size: 200% 100%;
       animation: shimmer 3s infinite linear;
+      color: #FFFFFF !important;
     }
     .gradient-text {
       background: linear-gradient(135deg, #E9D5FF 0%, #C084FC 45%, #38BDF8 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+    /* HIGH-CONTRAST LIGHT THEME OVERRIDES FOR 100% READABILITY */
+    html.light .glass-card {
+      background: #FFFFFF !important;
+      border-color: rgba(124, 58, 237, 0.35) !important;
+      box-shadow: 0 10px 30px -6px rgba(109, 40, 217, 0.12) !important;
+    }
     html.light .gradient-text {
-      background: linear-gradient(135deg, #7E22CE 0%, #9333EA 45%, #0284C7 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      background: linear-gradient(135deg, #5B21B6 0%, #7E22CE 45%, #0369A1 100%) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+    }
+    html.light .text-white:not(.keep-white) {
+      color: #0F172A !important;
+    }
+    html.light .text-sky-100,
+    html.light .text-sky-100\/95,
+    html.light .text-sky-100\/90,
+    html.light .text-sky-100\/85,
+    html.light .text-sky-100\/80 {
+      color: #1E293B !important;
+    }
+    html.light .text-sky-200,
+    html.light .text-sky-200\/90,
+    html.light .text-sky-200\/80 {
+      color: #334155 !important;
+    }
+    html.light .text-sky-300 {
+      color: #0369A1 !important;
+    }
+    html.light .text-violet-200,
+    html.light .text-violet-300 {
+      color: #6D28D9 !important;
+    }
+    html.light .text-fuchsia-200,
+    html.light .text-fuchsia-300 {
+      color: #A21CAF !important;
+    }
+    html.light .bg-slate-900,
+    html.light .bg-slate-900\/90,
+    html.light .bg-slate-900\/85,
+    html.light .bg-slate-900\/80,
+    html.light .bg-slate-900\/75,
+    html.light .bg-slate-900\/70,
+    html.light .bg-slate-900\/60 {
+      background-color: #F1F5F9 !important;
+      border-color: rgba(124, 58, 237, 0.35) !important;
+      color: #0F172A !important;
+    }
+    html.light .bg-slate-950,
+    html.light .bg-slate-950\/90,
+    html.light .bg-slate-950\/85,
+    html.light .bg-slate-950\/80,
+    html.light .bg-slate-950\/75 {
+      background-color: #FFFFFF !important;
+      border-color: rgba(124, 58, 237, 0.4) !important;
+      color: #0F172A !important;
+    }
+    html.light .bg-violet-500\/20,
+    html.light .bg-violet-500\/25,
+    html.light .bg-violet-600\/20,
+    html.light .bg-violet-600\/25,
+    html.light .bg-violet-600\/30 {
+      background-color: #EDE9FE !important;
+      border-color: #8B5CF6 !important;
+      color: #4C1D95 !important;
+    }
+    html.light .bg-sky-500\/20,
+    html.light .bg-sky-500\/25,
+    html.light .bg-sky-500\/30 {
+      background-color: #E0F2FE !important;
+      border-color: #0284C7 !important;
+      color: #0C4A6E !important;
+    }
+    html.light .bg-fuchsia-500\/25 {
+      background-color: #FAE8FF !important;
+      border-color: #C026D3 !important;
+      color: #701A75 !important;
+    }
+    html.light select,
+    html.light input[type="text"],
+    html.light input[type="tel"] {
+      background-color: #FFFFFF !important;
+      color: #0F172A !important;
+      border-color: #7C3AED !important;
+    }
+    html.light .keep-white,
+    html.light .keep-white *,
+    html.light .shimmer-btn,
+    html.light .shimmer-btn * {
+      color: #FFFFFF !important;
     }
     .reveal {
       opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
     }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .num-nowrap {
-      white-space: nowrap;
-      font-variant-numeric: tabular-nums;
-      display: inline-block;
-    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .num-nowrap { white-space: nowrap; font-variant-numeric: tabular-nums; display: inline-block; }
   </style>
-
-  <!-- JSON-LD Structured Data for GEO / AEO / ChatGPT / Perplexity / Google AI Overviews -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "EducationalOrganization",
-        "@id": "https://utime-courses.com/#organization",
-        "name": "U-Time College",
-        "alternateName": ["מכללת U-Time", "Колледж U-Time Израиль"],
-        "url": "https://utime-courses.com/",
-        "telephone": "1-700-70-80-19",
-        "email": "utime2013@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Tarmav St 7, 5th Floor",
-          "addressLocality": "Rishon LeZion, Tel Aviv, Haifa, Netanya, Ashdod, Beer Sheva (30+ branches)",
-          "addressCountry": "IL"
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Как получить государственный ваучер до 80% (7000₪) в U-Time College?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Новые репатрианты (Олим Хадашим до 10 лет в Израиле, окончившие ульпан Алеф) и Тошавим Хозрим (до 2 лет) получают ваучер Министерства алии и интеграции (שובר להכשרה מקצועית), покрывающий до 80% стоимости обучения (до 7000₪ / 1900$). U-Time College помогает оформить полный пакет документов и письменное обязательство трудоустройства."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Какие курсы и прикладные направления доступны в 30+ филиалах U-Time College?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "В U-Time College доступны курсы AI и интернет-маркетинга (GEO/AEO/SEO трафик), QA тестирования ПО, мобильных приложений (особенно для Android), настольных и веб-приложений, серверов, игр, бухгалтерии 1+2 и расчета зарплат, косметологии и профессиональных ульпанов иврита с 85% живой практики."
-            }
-          }
-        ]
-      }
-    ]
-  }
-  </script>
 </head>
 <body class="antialiased selection:bg-violet-600 selection:text-white pb-24 lg:pb-12">
 
-  <!-- Background Aurora Borealis Mesh -->
   <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-    <div class="absolute -top-32 -left-32 w-[480px] h-[480px] rounded-full bg-violet-600/20 blur-[130px] animate-aurora"></div>
-    <div class="absolute top-1/3 -right-32 w-[460px] h-[460px] rounded-full bg-sky-500/20 blur-[130px] animate-aurora" style="animation-delay: -5s;"></div>
-    <div class="absolute -bottom-32 left-1/4 w-[420px] h-[420px] rounded-full bg-fuchsia-600/15 blur-[140px] animate-aurora" style="animation-delay: -9s;"></div>
+    <div class="absolute -top-32 -left-32 w-[480px] h-[480px] rounded-full bg-violet-600/15 blur-[130px] animate-aurora"></div>
+    <div class="absolute top-1/3 -right-32 w-[460px] h-[460px] rounded-full bg-sky-500/15 blur-[130px] animate-aurora" style="animation-delay: -5s;"></div>
   </div>
 
-  <!-- Sticky Header (Brand ALWAYS in English: U-Time College) -->
-  <header class="sticky top-0 z-50 glass-card border-b border-violet-500/25">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-3">
+  <!-- Sticky Header (Brand in English: U-Time College + Phone 03-5757295 + 3-Page Switcher) -->
+  <header class="sticky top-0 z-50 glass-card border-b border-violet-500/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-2 sm:gap-4">
       <a href="index.html" class="flex items-center gap-3 group shrink-0">
-        <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-violet-600 via-purple-600 to-sky-500 flex items-center justify-center shadow-lg shadow-violet-600/30 group-hover:scale-105 transition-transform">
-          <span class="font-display font-extrabold text-white text-xl tracking-tight">U</span>
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-violet-600 via-purple-600 to-sky-500 flex items-center justify-center shadow-lg keep-white">
+          <span class="font-display font-extrabold text-white text-xl keep-white">U</span>
         </div>
         <div>
-          <div class="font-display font-extrabold text-lg sm:text-xl tracking-tight text-white flex items-center gap-2">
+          <div class="font-display font-extrabold text-base sm:text-xl tracking-tight text-white flex items-center gap-2">
             <span>U-Time College</span>
-            <span class="hidden sm:inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-violet-500/20 text-violet-200 border border-violet-400/30">30+ Campuses</span>
+            <span class="hidden md:inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold bg-violet-500/20 text-violet-200 border border-violet-400/30">30+ Филиалов</span>
           </div>
-          <p class="text-xs text-sky-200/90" data-i18n="nav_subtitle">מכללת U-Time • Сеть колледжей IT, AI, GEO/AEO/SEO и Карьеры</p>
+          <p class="text-xs font-semibold text-sky-200" data-i18n="nav_subtitle">מכללת U-Time • Тел.: 03-5757295 • Курсы IT, AI, GEO/AEO/SEO и Карьеры</p>
         </div>
       </a>
 
-      <nav class="hidden lg:flex items-center gap-1 bg-slate-900/70 border border-violet-500/25 rounded-2xl p-1.5">
-        <a href="index.html" class="px-4 py-2 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-violet-600 to-sky-500 shadow-md shadow-violet-600/25" data-i18n="nav_home">Главная Витрина</a>
-        <a href="offer.html" class="px-4 py-2 rounded-xl text-sm font-medium text-sky-100 hover:text-white hover:bg-violet-600/20 transition-all" data-i18n="nav_offer">Калькулятор Ваучера 80%</a>
-        <a href="audit.html" class="px-4 py-2 rounded-xl text-sm font-medium text-sky-100 hover:text-white hover:bg-violet-600/20 transition-all" data-i18n="nav_audit">Аудит &amp; Рост (+265%)</a>
+      <!-- Desktop 3-Page Switcher -->
+      <nav class="hidden lg:flex items-center gap-1.5 bg-slate-900/80 border border-violet-500/30 rounded-2xl p-1.5" aria-label="3-Page Switcher">
+        <a href="index.html" class="keep-white px-4 py-2 rounded-xl text-xs xl:text-sm font-extrabold text-white bg-gradient-to-r from-violet-600 to-sky-500 shadow-md" data-i18n="nav_home">1. Главная и Все Курсы</a>
+        <a href="offer.html" class="px-4 py-2 rounded-xl text-xs xl:text-sm font-bold text-sky-100 hover:bg-violet-600/20 transition-all" data-i18n="nav_offer">2. Калькулятор Ваучера 80%</a>
+        <a href="audit.html" class="px-4 py-2 rounded-xl text-xs xl:text-sm font-bold text-sky-100 hover:bg-violet-600/20 transition-all" data-i18n="nav_audit">3. Аудит &amp; Рост (+265%)</a>
       </nav>
 
-      <div class="flex items-center gap-2 sm:gap-3">
-        <!-- 3-Language Switcher -->
-        <div class="flex items-center bg-slate-900/90 border border-violet-400/30 rounded-xl p-1" role="group">
-          <button type="button" onclick="setLanguage('ru')" id="lang-btn-ru" class="px-2.5 py-1 rounded-lg text-xs font-bold transition-all bg-gradient-to-r from-violet-600 to-sky-500 text-white shadow">RU</button>
-          <button type="button" onclick="setLanguage('he')" id="lang-btn-he" class="px-2.5 py-1 rounded-lg text-xs font-bold transition-all text-sky-200 hover:text-white">עב</button>
-          <button type="button" onclick="setLanguage('en')" id="lang-btn-en" class="px-2.5 py-1 rounded-lg text-xs font-bold transition-all text-sky-200 hover:text-white">EN</button>
+      <!-- Right Controls: Language RU | עב | EN + Theme Toggle + Phone 03-5757295 -->
+      <div class="flex items-center gap-2">
+        <div class="flex items-center bg-slate-900/90 border border-violet-400/40 rounded-xl p-1">
+          <button type="button" onclick="setLanguage('ru')" id="lang-btn-ru" class="keep-white px-2.5 py-1 rounded-lg text-xs font-bold transition-all bg-gradient-to-r from-violet-600 to-sky-500 text-white shadow">RU</button>
+          <button type="button" onclick="setLanguage('he')" id="lang-btn-he" class="px-2.5 py-1 rounded-lg text-xs font-bold transition-all text-sky-200">עב</button>
+          <button type="button" onclick="setLanguage('en')" id="lang-btn-en" class="px-2.5 py-1 rounded-lg text-xs font-bold transition-all text-sky-200">EN</button>
         </div>
 
-        <!-- Theme Toggle -->
-        <button type="button" onclick="toggleTheme()" class="w-10 h-10 rounded-xl bg-slate-900/80 border border-violet-400/30 flex items-center justify-center text-sky-200 hover:text-white hover:border-sky-400 transition-all" aria-label="Toggle Theme">
+        <button type="button" onclick="toggleTheme()" class="w-10 h-10 rounded-xl bg-slate-900/80 border border-violet-400/40 flex items-center justify-center text-sky-200 hover:border-sky-400 transition-all" title="Переключить темную / светлую тему">
           <svg id="theme-icon-sun" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
           <svg id="theme-icon-moon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
         </button>
 
-        <a href="tel:1700708019" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-violet-600 to-sky-500 text-white font-bold text-xs sm:text-sm shadow-lg shadow-violet-600/30 hover:opacity-95 transition-all num-nowrap">
-          <span>1-700-70-80-19</span>
+        <a href="tel:035757295" class="keep-white hidden sm:inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-violet-600 to-sky-500 text-white font-extrabold text-xs sm:text-sm shadow-lg num-nowrap">
+          <span>📞 03-5757295</span>
         </a>
       </div>
     </div>
 
-    <div class="lg:hidden flex items-center justify-around border-t border-violet-500/20 bg-slate-950/80 px-2 py-2 text-xs font-semibold">
-      <a href="index.html" class="px-3 py-1.5 rounded-lg bg-violet-600/30 text-white border border-violet-400/40" data-i18n="nav_home">Главная</a>
-      <a href="offer.html" class="px-3 py-1.5 rounded-lg text-sky-200 hover:text-white" data-i18n="nav_offer">Калькулятор 80%</a>
-      <a href="audit.html" class="px-3 py-1.5 rounded-lg text-sky-200 hover:text-white" data-i18n="nav_audit">Аудит (+265%)</a>
+    <!-- Mobile & Tablet Always-Visible 3-Page Switcher Bar -->
+    <div class="lg:hidden grid grid-cols-3 gap-1.5 border-t border-violet-500/25 bg-slate-950/90 px-2.5 py-2 text-center text-[11px] sm:text-xs font-extrabold">
+      <a href="index.html" class="keep-white py-2 px-1 rounded-xl bg-gradient-to-r from-violet-600 to-sky-500 text-white shadow" data-i18n="nav_home">1. Главная и Курсы</a>
+      <a href="offer.html" class="py-2 px-1 rounded-xl bg-slate-900/80 text-sky-200 border border-violet-400/30" data-i18n="nav_offer">2. Ваучер 80%</a>
+      <a href="audit.html" class="py-2 px-1 rounded-xl bg-slate-900/80 text-sky-200 border border-violet-400/30" data-i18n="nav_audit">3. Аудит (+265%)</a>
     </div>
   </header>
 
   <main class="relative z-10">
 
     <!-- HERO SECTION -->
-    <section class="pt-10 pb-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section class="pt-8 pb-14 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-        <div class="lg:col-span-7 space-y-6 reveal visible">
-          <div class="inline-flex flex-wrap items-center gap-2 px-4 py-2 rounded-full bg-violet-500/20 border border-violet-400/40 text-sky-100 text-xs sm:text-sm font-semibold">
+        <div class="lg:col-span-7 space-y-5 reveal visible">
+          <div class="inline-flex flex-wrap items-center gap-2 px-4 py-2 rounded-full bg-violet-500/20 border border-violet-400/40 text-sky-100 text-xs sm:text-sm font-bold">
             <span class="w-2.5 h-2.5 rounded-full bg-sky-400 animate-ping"></span>
-            <span data-i18n="hero_badge">Под эгидой Министерства алии • 30+ филиалов рядом с домом • Ваучер до 80% (7000₪)</span>
+            <span data-i18n="hero_badge">Под эгидой Министерства алии • 30+ филиалов в Израиле • Тел.: 03-5757295</span>
           </div>
 
           <h1 class="font-display font-extrabold text-3xl sm:text-5xl lg:text-6xl leading-[1.12] tracking-tight text-white">
@@ -228,235 +252,316 @@
             <span class="gradient-text block mt-2 num-nowrap" data-i18n="hero_title_salary">13000–26000₪ (3500–7000$)</span>
           </h1>
 
-          <p class="text-base sm:text-lg text-sky-100/95 leading-relaxed max-w-2xl" data-i18n="hero_desc">
-            Не тратьте годы на барьеры! В U-Time College вас ждут более 30 филиалов по всей стране и живой онлайн, современная программа обучения (85% практики на русском и иврите), опытные преподаватели-практики и помощь с трудоустройством (92% выпускников находят работу). От AI и интернет-маркетинга GEO/AEO/SEO до QA, мобильных приложений для Android и финансов!
+          <p class="text-base sm:text-lg text-sky-100 leading-relaxed max-w-2xl" data-i18n="hero_desc">
+            В U-Time College (מכללת U-Time) вас ждут более 30 филиалов рядом с домом и живой онлайн, современная программа обучения (85% практики на русском и иврите), опытные преподаватели-практики и помощь с трудоустройством (92% выпускников находят работу). Позвоните нам по номеру 03-5757295 или рассчитайте ваучер до 7000₪ онлайн!
           </p>
 
-          <!-- 4 Key Percentage Stats -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+          <!-- Prominent Contact Bar -->
+          <div class="p-4 rounded-2xl bg-slate-900/85 border-2 border-violet-400/40 flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <div class="text-xs font-extrabold uppercase text-sky-300" data-i18n="contact_bar_lbl">Прямая линия приёмной комиссии U-Time College:</div>
+              <div class="font-display font-extrabold text-lg sm:text-xl text-white mt-0.5 num-nowrap">📞 Тел.: 03-5757295 • WhatsApp: 055-994-5112</div>
+            </div>
+            <a href="tel:035757295" class="keep-white px-4 py-2.5 rounded-xl bg-gradient-to-r from-violet-600 to-sky-500 text-white font-extrabold text-xs sm:text-sm shadow num-nowrap" data-i18n="call_now_btn">Позвонить 03-5757295</a>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
             <div class="glass-card rounded-2xl p-4 border border-violet-400/30">
               <div class="text-2xl sm:text-3xl font-extrabold text-sky-300 num-nowrap" data-i18n="stat_1_val">до 80%</div>
-              <div class="text-xs text-sky-100 mt-1" data-i18n="stat_1_lbl">Гос. ваучер (до <span class="num-nowrap">7000₪</span>)</div>
+              <div class="text-xs font-semibold text-sky-100 mt-1" data-i18n="stat_1_lbl">Гос. ваучер (до 7000₪)</div>
             </div>
             <div class="glass-card rounded-2xl p-4 border border-sky-400/30">
               <div class="text-2xl sm:text-3xl font-extrabold text-violet-300 num-nowrap" data-i18n="stat_2_val">до 100%</div>
-              <div class="text-xs text-sky-100 mt-1" data-i18n="stat_2_lbl">Пикадон для солдат</div>
+              <div class="text-xs font-semibold text-sky-100 mt-1" data-i18n="stat_2_lbl">Пикадон для солдат</div>
             </div>
             <div class="glass-card rounded-2xl p-4 border border-violet-400/30">
               <div class="text-2xl sm:text-3xl font-extrabold text-sky-300 num-nowrap" data-i18n="stat_3_val">85%</div>
-              <div class="text-xs text-sky-100 mt-1" data-i18n="stat_3_lbl">Живой практики в проектах</div>
+              <div class="text-xs font-semibold text-sky-100 mt-1" data-i18n="stat_3_lbl">Живой практики в проектах</div>
             </div>
             <div class="glass-card rounded-2xl p-4 border border-sky-400/30">
               <div class="text-2xl sm:text-3xl font-extrabold text-violet-300 num-nowrap" data-i18n="stat_4_val">92%</div>
-              <div class="text-xs text-sky-100 mt-1" data-i18n="stat_4_lbl">Помощь с трудоустройством</div>
+              <div class="text-xs font-semibold text-sky-100 mt-1" data-i18n="stat_4_lbl">Помощь с трудоустройством</div>
             </div>
           </div>
 
           <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
-            <a href="offer.html" class="shimmer-btn px-7 py-4 rounded-2xl font-display font-extrabold text-white text-center text-base shadow-xl shadow-violet-600/35 hover:scale-[1.02] transition-transform" data-i18n="hero_cta_1">
-              Рассчитать мой ваучер до 80% (7000₪)
+            <a href="offer.html" class="shimmer-btn keep-white px-7 py-4 rounded-2xl font-display font-extrabold text-white text-center text-base shadow-xl hover:scale-[1.02] transition-transform" data-i18n="hero_cta_1">
+              Перейти на Стр. 2: Калькулятор Ваучера 80% (7000₪) →
             </a>
-            <a href="#quiz-section" class="px-6 py-4 rounded-2xl glass-card border border-sky-400/40 text-sky-100 hover:text-white hover:border-sky-300 font-bold text-center text-base transition-all" data-i18n="hero_cta_2">
-              Подобрать курс и филиал за 30 секунд
+            <a href="#full-courses-list" class="px-6 py-4 rounded-2xl glass-card border-2 border-violet-400/50 text-white font-bold text-center text-base hover:border-sky-400 transition-all" data-i18n="hero_cta_2">
+              Смотреть полный список курсов (9 направлений)
             </a>
           </div>
         </div>
 
         <div class="lg:col-span-5 relative reveal visible">
-          <div class="relative rounded-3xl overflow-hidden border-2 border-violet-400/40 shadow-2xl shadow-violet-600/30 group">
+          <div class="relative rounded-3xl overflow-hidden border-2 border-violet-400/40 shadow-2xl group keep-white">
             <img src="assets/hero_campus.jpg" alt="U-Time College Campus Israel" class="w-full h-[380px] sm:h-[440px] object-cover group-hover:scale-105 transition-transform duration-700" />
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/35 to-transparent"></div>
-            <div class="absolute top-4 left-4 right-4 flex items-center justify-between gap-2">
-              <span class="px-3.5 py-1.5 rounded-full bg-slate-950/85 border border-sky-400/40 text-sky-200 text-xs font-bold backdrop-blur-md" data-i18n="hero_img_tag1">
-                שובר משרד הקליטה • до 80% (7000₪)
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            <div class="absolute top-4 left-4 right-4 flex items-center justify-between gap-2 keep-white">
+              <span class="px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-sky-400/40 text-white text-xs font-bold keep-white">
+                📞 03-5757295 • до 80% (7000₪)
               </span>
-              <span class="px-3.5 py-1.5 rounded-full bg-violet-600/90 text-white text-xs font-bold shadow-lg" data-i18n="hero_img_tag2">
+              <span class="px-3.5 py-1.5 rounded-full bg-violet-600 text-white text-xs font-bold shadow-lg keep-white">
                 30+ городов + Zoom
               </span>
             </div>
-            <div class="absolute bottom-4 left-4 right-4 glass-card rounded-2xl p-4 border border-violet-400/40">
-              <p class="text-xs font-bold uppercase tracking-wider text-sky-300" data-i18n="hero_card_kicker">Учёба рядом с домом без языкового стресса</p>
-              <p class="text-sm sm:text-base font-extrabold text-white mt-0.5" data-i18n="hero_card_title">Ришон-ле-Цион, Тель-Авив, Хайфа, Нетания, Ашдод, Беэр-Шева и ещё 25+ городов</p>
+            <div class="absolute bottom-4 left-4 right-4 rounded-2xl p-4 bg-slate-950/90 border border-violet-400/40 keep-white">
+              <p class="text-xs font-bold uppercase tracking-wider text-sky-300 keep-white" data-i18n="hero_card_kicker">Учёба рядом с домом без языкового стресса</p>
+              <p class="text-sm sm:text-base font-extrabold text-white mt-0.5 keep-white" data-i18n="hero_card_title">Ришон-ле-Цион (Тармав 7), Тель-Авив, Хайфа, Нетания, Ашдод, Беэр-Шева и 25+ городов</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SUPERCHARGED HOOKS & PRACTICAL DIRECTION SHOWCASE -->
-    <section class="py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto reveal">
-      <div class="text-center max-w-3xl mx-auto mb-12">
-        <span class="inline-block px-4 py-1.5 rounded-full bg-violet-500/20 border border-violet-400/40 text-violet-200 text-xs font-extrabold uppercase tracking-wider mb-3" data-i18n="hooks_kicker">
-          Почему тысячи репатриантов и израильтян выбирают U-Time College
+    <!-- COMPLETE ENUMERATION OF ALL 9 COURSES OFFERED BY U-TIME COLLEGE -->
+    <section id="full-courses-list" class="py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto reveal">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="inline-block px-4 py-1.5 rounded-full bg-violet-500/20 border border-violet-400/40 text-violet-200 text-xs font-extrabold uppercase tracking-wider mb-3" data-i18n="cat_kicker">
+          Полный каталог аккредитованных программ U-Time College (Тел.: 03-5757295)
         </span>
-        <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-white" data-i18n="hooks_title">
-          Современная программа обучения, опытные преподаватели и самые денежные специальности 2026 года
+        <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-white" data-i18n="cat_title">
+          Все 9 направлений курсов и профессий с правом на ваучер до 80% (7000₪) и Пикадон до 100%
         </h2>
-        <p class="text-sky-100/90 text-sm sm:text-base mt-3" data-i18n="hooks_subtitle">
-          ИИ и нейросети изменили рынок труда: сегодня выигрывают те, кто владеет практическими инструментами AI, умеет привлекать трафик из ChatGPT и Google AI, создаёт приложения и автоматизирует тестирование!
+        <p class="text-sky-100 text-sm sm:text-base mt-3" data-i18n="cat_subtitle">
+          Каждая программа включает 85% живой практики, обучение у опытных преподавателей на понятном языке с освоением профессионального иврита и помощь с трудоустройством (92% выпускников выходят на работу)!
         </p>
       </div>
 
       <!-- 3 Core Pillars -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-        <div class="glass-card rounded-3xl p-6 sm:p-7 border border-violet-400/35">
-          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-600 to-sky-500 flex items-center justify-center text-white font-extrabold text-lg mb-4">85%</div>
+        <div class="glass-card rounded-3xl p-6 border border-violet-400/35">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-600 to-sky-500 flex items-center justify-center text-white font-extrabold text-lg mb-3 keep-white">85%</div>
           <h3 class="font-display font-extrabold text-xl text-white" data-i18n="pil_1_t">Современная программа обучения</h3>
-          <p class="text-sky-100/90 text-sm mt-2 leading-relaxed" data-i18n="pil_1_d">
-            85% курса — живая практика на реальных кейсах израильского рынка! Вы осваиваете профессию на понятном русском языке с плавным погружением в профессиональный иврит и английский.
+          <p class="text-sky-100 text-sm mt-2 leading-relaxed" data-i18n="pil_1_d">
+            85% курса — живая практика на реальных проектах израильского рынка! Учитесь на понятном русском языке с плавным освоением профессиональной терминологии на иврите и английском.
           </p>
         </div>
-
-        <div class="glass-card rounded-3xl p-6 sm:p-7 border border-sky-400/35">
-          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-sky-500 to-violet-600 flex items-center justify-center text-white font-extrabold text-lg mb-4">100%</div>
+        <div class="glass-card rounded-3xl p-6 border border-sky-400/35">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-sky-500 to-violet-600 flex items-center justify-center text-white font-extrabold text-lg mb-3 keep-white">100%</div>
           <h3 class="font-display font-extrabold text-xl text-white" data-i18n="pil_2_t">Опытные преподаватели</h3>
-          <p class="text-sky-100/90 text-sm mt-2 leading-relaxed" data-i18n="pil_2_d">
-            100% наших лекторов — практикующие эксперты израильских IT-компаний, маркетинговых агентств и финансовых департаментов, передающие актуальный опыт работы в Израиле.
+          <p class="text-sky-100 text-sm mt-2 leading-relaxed" data-i18n="pil_2_d">
+            100% наших лекторов — практикующие специалисты израильских IT-компаний, агентств маркетинга, финансовых и медицинских центров.
           </p>
         </div>
-
-        <div class="glass-card rounded-3xl p-6 sm:p-7 border border-violet-400/35">
-          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-fuchsia-600 to-sky-500 flex items-center justify-center text-white font-extrabold text-lg mb-4">92%</div>
+        <div class="glass-card rounded-3xl p-6 border border-violet-400/35">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-fuchsia-600 to-sky-500 flex items-center justify-center text-white font-extrabold text-lg mb-3 keep-white">92%</div>
           <h3 class="font-display font-extrabold text-xl text-white" data-i18n="pil_3_t">Помощь с трудоустройством</h3>
-          <p class="text-sky-100/90 text-sm mt-2 leading-relaxed" data-i18n="pil_3_d">
-            92% выпускников трудоустраиваются! Готовим резюме по израильскому стандарту, тренируем прохождение интервью и выдаём письменное обязательство трудоустройства для ваучера.
+          <p class="text-sky-100 text-sm mt-2 leading-relaxed" data-i18n="pil_3_d">
+            92% выпускников трудоустраиваются! Составляем резюме, готовим к собеседованиям и выдаём письменное обязательство трудоустройства для одобрения ваучера до 7000₪.
           </p>
         </div>
       </div>
 
-      <!-- 6 High-Impact Direction Cards (AI/GEO/AEO/SEO + Android/Web/Desktop/Servers/Games + QA/Finance/Ulpan) -->
+      <!-- 9 Detailed Course Cards -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Card 1: AI & Digital Marketing GEO/AEO/SEO -->
-        <div class="glass-card rounded-3xl p-6 border-2 border-sky-400/50 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+        <!-- Course 1 -->
+        <div class="glass-card rounded-3xl p-6 border-2 border-sky-400/50 flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between gap-2 mb-4">
-              <span class="px-3 py-1 rounded-full bg-sky-500/30 text-sky-100 text-xs font-extrabold" data-i18n="c1_tag">Флагман 2026 • GEO / AEO / SEO</span>
-              <span class="text-sky-300 font-extrabold text-xs num-nowrap">14000–26000₪</span>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="px-3 py-1 rounded-full bg-sky-500/25 text-sky-200 text-xs font-extrabold" data-i18n="c1_tag">Курс №1 • Хит 2026</span>
+              <span class="text-sky-300 font-extrabold text-sm num-nowrap">14000–26000₪</span>
             </div>
-            <h3 class="font-display font-extrabold text-lg sm:text-xl text-white" data-i18n="c1_title">
-              Курсы обучения AI, Digital-Маркетингу и Трафику (GEO / AEO / SEO)
+            <h3 class="font-display font-extrabold text-lg text-white" data-i18n="c1_title">
+              1. Курсы обучения AI, Digital-Маркетингу и Трафику (GEO / AEO / SEO)
             </h3>
-            <p class="text-sky-100/90 text-sm mt-2.5 leading-relaxed" data-i18n="c1_desc">
-              ChatGPT, Perplexity и Google AI Overviews перехватывают до 65% поисковых кликов! Научитесь выводить сайты в топ ответов нейросетей, запускать окупаемый таргет и контекст и создавать AI-воронки с ростом конверсии до +265%!
+            <p class="text-sky-100 text-sm mt-2 leading-relaxed" data-i18n="c1_desc">
+              Продвижение сайтов и брендов в ответах ChatGPT, Perplexity и Google AI Overviews, классическое SEO, таргетированная реклама (Meta/TikTok), контекст Google Ads, SMM и создание AI-автоворонок продаж (+265% к конверсии).
             </p>
           </div>
-          <div class="mt-5 pt-4 border-t border-sky-500/25 flex items-center justify-between text-xs text-sky-200">
-            <span data-i18n="c1_foot">Субсидия по ваучеру до 80% (7000₪)</span>
-            <a href="offer.html" class="font-extrabold text-sky-300 hover:text-white" data-i18n="card_cta">Рассчитать →</a>
+          <div class="mt-4 pt-3 border-t border-violet-500/20 flex items-center justify-between text-xs font-bold">
+            <span class="text-sky-300">📞 03-5757295</span>
+            <a href="offer.html" class="text-violet-300 hover:underline" data-i18n="card_cta">Рассчитать ваучер 80% →</a>
           </div>
         </div>
 
-        <!-- Card 2: QA Software Tester + AI Testing -->
-        <div class="glass-card rounded-3xl p-6 border border-violet-400/35 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+        <!-- Course 2 -->
+        <div class="glass-card rounded-3xl p-6 border border-violet-400/35 flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between gap-2 mb-4">
-              <span class="px-3 py-1 rounded-full bg-violet-500/25 text-violet-200 text-xs font-extrabold" data-i18n="c2_tag">Быстрый вход в Hi-Tech</span>
-              <span class="text-sky-300 font-extrabold text-xs num-nowrap">13000–23000₪</span>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="px-3 py-1 rounded-full bg-violet-500/25 text-violet-200 text-xs font-extrabold" data-i18n="c2_tag">Курс №2 • Вход в Hi-Tech</span>
+              <span class="text-sky-300 font-extrabold text-sm num-nowrap">13000–23000₪</span>
             </div>
-            <h3 class="font-display font-extrabold text-lg sm:text-xl text-white" data-i18n="c2_title">
-              Тестировщик ПО (QA Software Tester) и AI-Автоматизация
+            <h3 class="font-display font-extrabold text-lg text-white" data-i18n="c2_title">
+              2. Тестировщик ПО (QA Software Tester) и AI-Тестирование
             </h3>
-            <p class="text-sky-100/90 text-sm mt-2.5 leading-relaxed" data-i18n="c2_desc">
-              Освойте тестирование коммерческого ПО с нуля без математического диплома: тест-дизайн, Jira, SQL, API, тестирование мобильных и веб-систем с применением современных ИИ-ассистентов.
+            <p class="text-sky-100 text-sm mt-2 leading-relaxed" data-i18n="c2_desc">
+              Полный курс ручного и автоматизированного тестирования: методология QA, тест-дизайн, Jira, TestRail, SQL, REST API, Postman, мобильное и веб-тестирование с ИИ-инструментами.
             </p>
           </div>
-          <div class="mt-5 pt-4 border-t border-violet-500/20 flex items-center justify-between text-xs text-sky-200">
-            <span data-i18n="c2_foot">Официальный диплом + стажировка</span>
-            <a href="offer.html" class="font-extrabold text-sky-300 hover:text-white" data-i18n="card_cta">Рассчитать →</a>
+          <div class="mt-4 pt-3 border-t border-violet-500/20 flex items-center justify-between text-xs font-bold">
+            <span class="text-sky-300">📞 03-5757295</span>
+            <a href="offer.html" class="text-violet-300 hover:underline" data-i18n="card_cta">Рассчитать ваучер 80% →</a>
           </div>
         </div>
 
-        <!-- Card 3: Mobile Apps (Android) & Web Applications -->
-        <div class="glass-card rounded-3xl p-6 border border-violet-400/35 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+        <!-- Course 3 -->
+        <div class="glass-card rounded-3xl p-6 border border-violet-400/35 flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between gap-2 mb-4">
-              <span class="px-3 py-1 rounded-full bg-violet-500/25 text-violet-200 text-xs font-extrabold" data-i18n="c3_tag">Mobile &amp; Web Dev</span>
-              <span class="text-sky-300 font-extrabold text-xs num-nowrap">15000–26000₪</span>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="px-3 py-1 rounded-full bg-violet-500/25 text-violet-200 text-xs font-extrabold" data-i18n="c3_tag">Курс №3 • Mobile Dev</span>
+              <span class="text-sky-300 font-extrabold text-sm num-nowrap">15000–26000₪</span>
             </div>
-            <h3 class="font-display font-extrabold text-lg sm:text-xl text-white" data-i18n="c3_title">
-              Мобильные приложения (особенно приложения для Android) и Веб-приложения
+            <h3 class="font-display font-extrabold text-lg text-white" data-i18n="c3_title">
+              3. Мобильные приложения (особенно приложения для Android)
             </h3>
-            <p class="text-sky-100/90 text-sm mt-2.5 leading-relaxed" data-i18n="c3_desc">
-              Создавайте востребованные мобильные приложения для смартфонов на Android и интерактивные облачные веб-приложения с подключением платежных шлюзов, баз данных и ИИ-модулей!
+            <p class="text-sky-100 text-sm mt-2 leading-relaxed" data-i18n="c3_desc">
+              Практическая разработка быстрых мобильных приложений для смартфонов на базе Android (Java / Kotlin / Android Studio), интеграция платежей, геолокации и публикация в Google Play.
             </p>
           </div>
-          <div class="mt-5 pt-4 border-t border-violet-500/20 flex items-center justify-between text-xs text-sky-200">
-            <span data-i18n="c3_foot">Готовое приложение в портфолио</span>
-            <a href="offer.html" class="font-extrabold text-sky-300 hover:text-white" data-i18n="card_cta">Рассчитать →</a>
+          <div class="mt-4 pt-3 border-t border-violet-500/20 flex items-center justify-between text-xs font-bold">
+            <span class="text-sky-300">📞 03-5757295</span>
+            <a href="offer.html" class="text-violet-300 hover:underline" data-i18n="card_cta">Рассчитать ваучер 80% →</a>
           </div>
         </div>
 
-        <!-- Card 4: Desktop Apps, Web/App Servers & Games -->
-        <div class="glass-card rounded-3xl p-6 border border-violet-400/35 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+        <!-- Course 4 -->
+        <div class="glass-card rounded-3xl p-6 border border-violet-400/35 flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between gap-2 mb-4">
-              <span class="px-3 py-1 rounded-full bg-sky-500/25 text-sky-200 text-xs font-extrabold" data-i18n="c4_tag">Backend, Desktop &amp; Games</span>
-              <span class="text-sky-300 font-extrabold text-xs num-nowrap">15000–26000₪</span>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="px-3 py-1 rounded-full bg-sky-500/25 text-sky-200 text-xs font-extrabold" data-i18n="c4_tag">Курс №4 • Full-Stack &amp; Web</span>
+              <span class="text-sky-300 font-extrabold text-sm num-nowrap">15000–26000₪</span>
             </div>
-            <h3 class="font-display font-extrabold text-lg sm:text-xl text-white" data-i18n="c4_title">
-              Настольные приложения, Веб-серверы и серверы приложений, Игры
+            <h3 class="font-display font-extrabold text-lg text-white" data-i18n="c4_title">
+              4. Веб-приложения, Веб-серверы и серверы приложений
             </h3>
-            <p class="text-sky-100/90 text-sm mt-2.5 leading-relaxed" data-i18n="c4_desc">
-              Проектируйте корпоративные настольные приложения, надежные веб-серверы и серверы приложений, а также увлекательные мобильные и компьютерные игры с современной графикой и физикой!
+            <p class="text-sky-100 text-sm mt-2 leading-relaxed" data-i18n="c4_desc">
+              Создание современных интерактивных веб-приложений, клиентских порталов, отказоустойчивых веб-серверов и серверов приложений с базами данных SQL/NoSQL и облачным деплоем.
             </p>
           </div>
-          <div class="mt-5 pt-4 border-t border-violet-500/20 flex items-center justify-between text-xs text-sky-200">
-            <span data-i18n="c4_foot">85% практики на живом коде</span>
-            <a href="offer.html" class="font-extrabold text-sky-300 hover:text-white" data-i18n="card_cta">Рассчитать →</a>
+          <div class="mt-4 pt-3 border-t border-violet-500/20 flex items-center justify-between text-xs font-bold">
+            <span class="text-sky-300">📞 03-5757295</span>
+            <a href="offer.html" class="text-violet-300 hover:underline" data-i18n="card_cta">Рассчитать ваучер 80% →</a>
           </div>
         </div>
 
-        <!-- Card 5: Accounting 1+2 & Payroll -->
-        <div class="glass-card rounded-3xl p-6 border border-violet-400/35 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+        <!-- Course 5 -->
+        <div class="glass-card rounded-3xl p-6 border border-violet-400/35 flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between gap-2 mb-4">
-              <span class="px-3 py-1 rounded-full bg-violet-500/25 text-violet-200 text-xs font-extrabold" data-i18n="c5_tag">Финансы и Бизнес Израиля</span>
-              <span class="text-sky-300 font-extrabold text-xs num-nowrap">10000–17000₪</span>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="px-3 py-1 rounded-full bg-fuchsia-500/25 text-fuchsia-200 text-xs font-extrabold" data-i18n="c5_tag">Курс №5 • Desktop &amp; Games</span>
+              <span class="text-sky-300 font-extrabold text-sm num-nowrap">14000–25000₪</span>
             </div>
-            <h3 class="font-display font-extrabold text-lg sm:text-xl text-white" data-i18n="c5_title">
-              Бухгалтерия (ступени 1+2) и Расчет зарплат (Хешеб Схар)
+            <h3 class="font-display font-extrabold text-lg text-white" data-i18n="c5_title">
+              5. Настольные приложения и Игры (GameDev)
             </h3>
-            <p class="text-sky-100/90 text-sm mt-2.5 leading-relaxed" data-i18n="c5_desc">
-              Стабильная и уважаемая профессия в любом городе Израиля: израильское налогообложение, программы учета, расчет зарплат и автоматизация финансовой отчетности с подготовкой к гос. экзаменам.
+            <p class="text-sky-100 text-sm mt-2 leading-relaxed" data-i18n="c5_desc">
+              Проектирование корпоративных настольных приложений для Windows/macOS/Linux, а также программирование игровой логики, физики и графики для мобильных и компьютерных игр.
             </p>
           </div>
-          <div class="mt-5 pt-4 border-t border-violet-500/20 flex items-center justify-between text-xs text-sky-200">
-            <span data-i18n="c5_foot">Одобрено для ваучера до 80%</span>
-            <a href="offer.html" class="font-extrabold text-sky-300 hover:text-white" data-i18n="card_cta">Рассчитать →</a>
+          <div class="mt-4 pt-3 border-t border-violet-500/20 flex items-center justify-between text-xs font-bold">
+            <span class="text-sky-300">📞 03-5757295</span>
+            <a href="offer.html" class="text-violet-300 hover:underline" data-i18n="card_cta">Рассчитать ваучер 80% →</a>
           </div>
         </div>
 
-        <!-- Card 6: Specialized Ulpans & Licensed Trades -->
-        <div class="glass-card rounded-3xl p-6 border border-violet-400/35 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+        <!-- Course 6 -->
+        <div class="glass-card rounded-3xl p-6 border border-violet-400/35 flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between gap-2 mb-4">
-              <span class="px-3 py-1 rounded-full bg-fuchsia-500/25 text-fuchsia-200 text-xs font-extrabold" data-i18n="c6_tag">30+ Филиалов и Лицензии</span>
-              <span class="text-sky-300 font-extrabold text-xs num-nowrap">10000–20000₪</span>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="px-3 py-1 rounded-full bg-violet-500/25 text-violet-200 text-xs font-extrabold" data-i18n="c6_tag">Курс №6 • Финансы Израиля</span>
+              <span class="text-sky-300 font-extrabold text-sm num-nowrap">10000–17000₪</span>
             </div>
-            <h3 class="font-display font-extrabold text-lg sm:text-xl text-white" data-i18n="c6_title">
-              Профессиональные Ульпаны, Косметология и Прикладные профессии
+            <h3 class="font-display font-extrabold text-lg text-white" data-i18n="c6_title">
+              6. Бухгалтерский учет (ступени 1+2) и Расчет зарплат (Хешеб Схар)
             </h3>
-            <p class="text-sky-100/90 text-sm mt-2.5 leading-relaxed" data-i18n="c6_desc">
-              Ульпаны иврита (Алеф, Бет, Гимел, медицинский и деловой иврит), аппаратная косметология, ассистент стоматолога, слаботочные системы безопасности и руководство строительными работами.
+            <p class="text-sky-100 text-sm mt-2 leading-relaxed" data-i18n="c6_desc">
+              Израильское налоговое право, программы бухгалтерского учета, начисление заработной платы (חשבות שכר), пенсионные отчисления и подготовка к государственным экзаменам.
             </p>
           </div>
-          <div class="mt-5 pt-4 border-t border-violet-500/20 flex items-center justify-between text-xs text-sky-200">
-            <span data-i18n="c6_foot">Утренние и вечерние группы</span>
-            <a href="offer.html" class="font-extrabold text-sky-300 hover:text-white" data-i18n="card_cta">Рассчитать →</a>
+          <div class="mt-4 pt-3 border-t border-violet-500/20 flex items-center justify-between text-xs font-bold">
+            <span class="text-sky-300">📞 03-5757295</span>
+            <a href="offer.html" class="text-violet-300 hover:underline" data-i18n="card_cta">Рассчитать ваучер 80% →</a>
+          </div>
+        </div>
+
+        <!-- Course 7 -->
+        <div class="glass-card rounded-3xl p-6 border border-violet-400/35 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="px-3 py-1 rounded-full bg-sky-500/25 text-sky-200 text-xs font-extrabold" data-i18n="c7_tag">Курс №7 • Дизайн и Креатив</span>
+              <span class="text-sky-300 font-extrabold text-sm num-nowrap">11000–19000₪</span>
+            </div>
+            <h3 class="font-display font-extrabold text-lg text-white" data-i18n="c7_title">
+              7. Графический дизайн, UI/UX и AI-Генерация Визуала
+            </h3>
+            <p class="text-sky-100 text-sm mt-2 leading-relaxed" data-i18n="c7_desc">
+              Дизайн мобильных и веб-интерфейсов в Figma, Photoshop, Illustrator, брендинг компаний и коммерческая генерация фото- и видеоконтента с помощью нейросетей.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-violet-500/20 flex items-center justify-between text-xs font-bold">
+            <span class="text-sky-300">📞 03-5757295</span>
+            <a href="offer.html" class="text-violet-300 hover:underline" data-i18n="card_cta">Рассчитать ваучер 80% →</a>
+          </div>
+        </div>
+
+        <!-- Course 8 -->
+        <div class="glass-card rounded-3xl p-6 border border-violet-400/35 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="px-3 py-1 rounded-full bg-fuchsia-500/25 text-fuchsia-200 text-xs font-extrabold" data-i18n="c8_tag">Курс №8 • Медицина и Бьюти</span>
+              <span class="text-sky-300 font-extrabold text-sm num-nowrap">10000–18000₪</span>
+            </div>
+            <h3 class="font-display font-extrabold text-lg text-white" data-i18n="c8_title">
+              8. Эстетическая Косметология, Ассистент стоматолога и Мед. секретарь
+            </h3>
+            <p class="text-sky-100 text-sm mt-2 leading-relaxed" data-i18n="c8_desc">
+              Практическое обучение в оборудованных кабинетах: аппаратная косметология, работа в стоматологических клиниках и медицинских центрах Израиля с официальным дипломом.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-violet-500/20 flex items-center justify-between text-xs font-bold">
+            <span class="text-sky-300">📞 03-5757295</span>
+            <a href="offer.html" class="text-violet-300 hover:underline" data-i18n="card_cta">Рассчитать ваучер 80% →</a>
+          </div>
+        </div>
+
+        <!-- Course 9 -->
+        <div class="glass-card rounded-3xl p-6 border border-violet-400/35 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="px-3 py-1 rounded-full bg-violet-500/25 text-violet-200 text-xs font-extrabold" data-i18n="c9_tag">Курс №9 • Языки и Инженерия</span>
+              <span class="text-sky-300 font-extrabold text-sm num-nowrap">11000–21000₪</span>
+            </div>
+            <h3 class="font-display font-extrabold text-lg text-white" data-i18n="c9_title">
+              9. Ульпаны иврита (Алеф–Гимел, Мед./Деловой) и Системы безопасности
+            </h3>
+            <p class="text-sky-100 text-sm mt-2 leading-relaxed" data-i18n="c9_desc">
+              Интенсивные ульпаны разговорного, делового и медицинского иврита, а также курсы техников слаботочных систем, камер видеонаблюдения и руководителей строительных работ.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-violet-500/20 flex items-center justify-between text-xs font-bold">
+            <span class="text-sky-300">📞 03-5757295</span>
+            <a href="offer.html" class="text-violet-300 hover:underline" data-i18n="card_cta">Рассчитать ваучер 80% →</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- INTERACTIVE 30-SECOND VOUCHER QUIZ (DIRECT TO WHATSAPP, NO CRM!) -->
-    <section id="quiz-section" class="py-14 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto reveal">
+    <!-- 3-PAGE NAVIGATION BANNER FOR EASY SWITCHING -->
+    <section class="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto reveal">
+      <div class="glass-card rounded-3xl p-6 sm:p-8 border-2 border-sky-400/40 flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div>
+          <span class="text-xs font-extrabold uppercase text-sky-300" data-i18n="nav_box_kicker">Навигация по 3-страничному демонстратору U-Time College</span>
+          <h3 class="font-display font-extrabold text-xl sm:text-2xl text-white mt-1" data-i18n="nav_box_title">Переключайтесь между всеми 3 страницами проекта в 1 клик:</h3>
+        </div>
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="index.html" class="keep-white px-5 py-3 rounded-xl bg-gradient-to-r from-violet-600 to-sky-500 text-white font-extrabold text-xs sm:text-sm shadow-lg" data-i18n="nav_home">1. Главная и Все Курсы</a>
+          <a href="offer.html" class="px-5 py-3 rounded-xl bg-slate-900 border-2 border-violet-400/50 text-white font-extrabold text-xs sm:text-sm hover:border-sky-400" data-i18n="nav_offer">2. Калькулятор Ваучера 80%</a>
+          <a href="audit.html" class="px-5 py-3 rounded-xl bg-slate-900 border-2 border-violet-400/50 text-white font-extrabold text-xs sm:text-sm hover:border-sky-400" data-i18n="nav_audit">3. Аудит &amp; Рост (+265%)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE QUIZ SECTION -->
+    <section id="quiz-section" class="py-12 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto reveal">
       <div class="glass-card rounded-3xl p-6 sm:p-10 border-2 border-violet-400/45 shadow-2xl">
         <div class="text-center max-w-2xl mx-auto mb-8">
-          <span class="px-3.5 py-1 rounded-full bg-sky-500/25 text-sky-200 text-xs font-extrabold uppercase tracking-wider" data-i18n="quiz_kicker">
-            Экспресс-проверка субсидии по стандарту gov.il
+          <span class="px-3.5 py-1 rounded-full bg-sky-500/25 text-sky-200 text-xs font-extrabold uppercase" data-i18n="quiz_kicker">
+            Проверка субсидии gov.il • Тел.: 03-5757295
           </span>
           <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-white mt-2" data-i18n="quiz_title">
-            Ответьте на 3 вопроса и получите подтверждение ваучера до 80% (7000₪) в WhatsApp
+            Ответьте на 3 вопроса и получите расчет ваучера до 80% (7000₪) в WhatsApp
           </h2>
         </div>
 
@@ -472,13 +577,17 @@
           </div>
 
           <div class="p-4 rounded-2xl bg-slate-900/80 border border-violet-400/30">
-            <label class="text-xs font-extrabold text-sky-300 uppercase block mb-2" data-i18n="q_lbl_2">2. Желаемое направление</label>
+            <label class="text-xs font-extrabold text-sky-300 uppercase block mb-2" data-i18n="q_lbl_2">2. Выберите курс из 9 направлений</label>
             <select id="quiz-course" class="w-full rounded-xl bg-slate-950 border border-violet-400/40 px-3 py-2.5 text-sm text-white font-semibold">
-              <option value="AI, Digital-Маркетинг и Трафик (GEO/AEO/SEO)">AI, Маркетинг и Трафик (GEO/AEO/SEO)</option>
-              <option value="QA Software Tester + AI Testing">QA Тестировщик ПО + AI</option>
-              <option value="Android, Веб, Настольные приложения, Серверы и Игры">Android, Веб, Серверы и Игры</option>
-              <option value="Бухгалтерия 1+2 и Хешеб Схар">Бухгалтерия 1+2 и Расчет зарплат</option>
-              <option value="Ульпан иврита / Прикладные профессии">Ульпан иврита / Косметология</option>
+              <option value="1. AI, Digital-Маркетинг и Трафик (GEO/AEO/SEO)">1. AI, Маркетинг и Трафик (GEO/AEO/SEO)</option>
+              <option value="2. QA Software Tester + AI Testing">2. QA Тестировщик ПО + AI</option>
+              <option value="3. Мобильные приложения (Android)">3. Мобильные приложения (Android)</option>
+              <option value="4. Веб-приложения и Серверы приложений">4. Веб-приложения и Серверы</option>
+              <option value="5. Настольные приложения и Игры">5. Настольные приложения и Игры</option>
+              <option value="6. Бухгалтерия 1+2 и Расчет зарплат">6. Бухгалтерия 1+2 и Хешеб Схар</option>
+              <option value="7. Графический дизайн и UI/UX">7. Графический дизайн и UI/UX</option>
+              <option value="8. Косметология / Ассистент стоматолога">8. Косметология / Медицина</option>
+              <option value="9. Ульпан иврита / Системы безопасности">9. Ульпан иврита / Безопасность</option>
             </select>
           </div>
 
@@ -494,349 +603,156 @@
         </div>
 
         <div class="flex flex-col sm:flex-row gap-3">
-          <input id="quiz-phone" type="tel" placeholder="Ваш телефон (05X-XXX-XXXX)" class="flex-1 rounded-xl bg-slate-950 border border-violet-400/40 px-4 py-3.5 text-sm text-white placeholder-sky-200/50" />
-          <button type="button" onclick="sendQuizToWhatsApp()" class="shimmer-btn px-8 py-4 rounded-xl font-display font-extrabold text-white text-sm sm:text-base shadow-xl" data-i18n="quiz_btn">
+          <input id="quiz-phone" type="tel" placeholder="Ваш телефон (05X-XXX-XXXX)" class="flex-1 rounded-xl bg-slate-950 border border-violet-400/40 px-4 py-3.5 text-sm text-white" />
+          <button type="button" onclick="sendQuizToWhatsApp()" class="shimmer-btn keep-white px-8 py-4 rounded-xl font-display font-extrabold text-white text-sm sm:text-base shadow-xl" data-i18n="quiz_btn">
             Проверить ваучер до 80% (7000₪) в WhatsApp
           </button>
         </div>
       </div>
     </section>
 
-    <!-- AEO FAQ BLOCK (45-55 WORDS PER ANSWER FOR AI CITATION) -->
-    <section class="py-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto reveal">
-      <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-white text-center mb-8" data-i18n="faq_title">
-        Точные ответы о ваучере 80% (7000₪), филиалах и трудоустройстве (База знаний GEO / AEO)
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-        <div class="glass-card rounded-2xl p-6 border border-violet-400/30">
-          <h3 class="font-display font-bold text-base text-sky-300" data-i18n="faq_q1">Действительно ли дают ваучер до 80% (7000₪) новым репатриантам?</h3>
-          <p class="text-xs sm:text-sm text-sky-100/90 mt-2 leading-relaxed" data-i18n="faq_a1">
-            Да, по официальным правилам Министерства алии и интеграции Израиля (gov.il) репатрианты до 10 лет в стране, закончившие ульпан Алеф, получают государственный ваучер, покрывающий до 80% стоимости курса (максимум до 7000₪ / 1900$). U-Time College оформляет все бланки и письменное обязательство трудоустройства.
-          </p>
-        </div>
-        <div class="glass-card rounded-2xl p-6 border border-violet-400/30">
-          <h3 class="font-display font-bold text-base text-sky-300" data-i18n="faq_q2">Зачем изучать AI и продвижение GEO / AEO / SEO в 2026 году?</h3>
-          <p class="text-xs sm:text-sm text-sky-100/90 mt-2 leading-relaxed" data-i18n="faq_a2">
-            Поисковые системы перешли на ответы искусственного интеллекта: ChatGPT, Perplexity и Google AI Overviews формируют рекомендации напрямую. Специалисты, умеющие выводить сайты в ответы нейросетей и настраивать AI-воронки трафика, зарабатывают в Израиле 14000–26000₪ (3800–7000$) в штате или на фрилансе.
-          </p>
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <!-- FOOTER -->
   <footer class="border-t border-violet-500/25 bg-slate-950/90 py-12 px-4 sm:px-6 lg:px-8 relative z-10">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
       <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-600 to-sky-500 flex items-center justify-center font-display font-extrabold text-white">U</div>
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-600 to-sky-500 flex items-center justify-center font-display font-extrabold text-white keep-white">U</div>
         <div>
-          <div class="font-display font-extrabold text-white text-base">U-Time College</div>
-          <p class="text-xs text-sky-200/80" data-i18n="footer_copy">© מכללת U-Time • Ришон-ле-Цион (ул. Тармав 7) и 30+ филиалов в Израиле • 1-700-70-80-19</p>
+          <div class="font-display font-extrabold text-white text-base">U-Time College — Тел.: 03-5757295</div>
+          <p class="text-xs text-sky-200" data-i18n="footer_copy">© מכללת U-Time • Ришон-ле-Цион (ул. Тармав 7) и 30+ филиалов в Израиле • Тел.: 03-5757295 • WhatsApp: 055-994-5112</p>
         </div>
       </div>
-      <div class="flex flex-wrap items-center gap-4 text-xs font-bold text-sky-200">
-        <a href="index.html" class="text-white underline decoration-sky-400" data-i18n="nav_home">Главная Витрина</a>
-        <a href="offer.html" class="hover:text-white" data-i18n="nav_offer">Калькулятор Ваучера 80%</a>
-        <a href="audit.html" class="hover:text-white" data-i18n="nav_audit">Аудит &amp; Рост (+265%)</a>
-        <a href="https://wa.me/972559945112" target="_blank" rel="noopener" class="px-3 py-1.5 rounded-lg bg-violet-600/30 border border-violet-400/40 text-white">WhatsApp 055-994-5112</a>
+      <div class="flex flex-wrap items-center gap-3 text-xs font-extrabold text-sky-200">
+        <a href="index.html" class="text-white underline decoration-sky-400" data-i18n="nav_home">1. Главная и Все Курсы</a>
+        <a href="offer.html" class="hover:underline" data-i18n="nav_offer">2. Калькулятор Ваучера 80%</a>
+        <a href="audit.html" class="hover:underline" data-i18n="nav_audit">3. Аудит &amp; Рост (+265%)</a>
+        <a href="tel:035757295" class="keep-white px-3 py-1.5 rounded-lg bg-violet-600 text-white">📞 03-5757295</a>
       </div>
     </div>
   </footer>
 
   <!-- MOBILE STICKY THUMB-ZONE BAR -->
   <div class="fixed bottom-0 left-0 right-0 z-40 lg:hidden glass-card border-t border-violet-400/40 px-3 py-2.5 flex items-center justify-between gap-2">
-    <a href="tel:1700708019" class="flex-1 py-3 rounded-xl bg-slate-900 border border-violet-400/40 text-center font-extrabold text-xs text-white num-nowrap">
-      📞 1-700-70-80-19
+    <a href="tel:035757295" class="flex-1 py-3 rounded-xl bg-slate-900 border border-violet-400/40 text-center font-extrabold text-xs text-white num-nowrap">
+      📞 03-5757295
     </a>
-    <a href="offer.html" class="flex-[2] py-3 rounded-xl shimmer-btn text-center font-extrabold text-xs text-white shadow-lg" data-i18n="mob_cta">
+    <a href="offer.html" class="keep-white flex-[2] py-3 rounded-xl shimmer-btn text-center font-extrabold text-xs text-white shadow-lg" data-i18n="mob_cta">
       Калькулятор ваучера 80% (7000₪)
     </a>
   </div>
-  <!-- 3-Language Dictionary & Interactive Quiz Logic for U-Time College index.html -->
-  <script>
-    let currentLang = localStorage.getItem('utime_lang') || 'ru';
 
-    const i18n = {
+
+  <script>
+    const translations = {
       ru: {
-        nav_subtitle: 'מכללת U-Time • Сеть колледжей IT, AI, GEO/AEO/SEO и Карьеры',
-        nav_home: 'Главная Витрина',
-        nav_offer: 'Калькулятор Ваучера 80%',
-        nav_audit: 'Аудит & Рост (+265%)',
-        hero_badge: 'Под эгидой Министерства алии • 30+ филиалов рядом с домом • Ваучер до 80% (7000₪)',
-        hero_title_1: 'Освойте востребованную профессию в Израиле с гос. оплатой до 80%–100% и доходом',
-        hero_title_salary: '13000–26000₪ (3500–7000$)',
-        hero_desc: 'Не тратьте годы на барьеры! В U-Time College вас ждут более 30 филиалов по всей стране и живой онлайн, современная программа обучения (85% практики на русском и иврите), опытные преподаватели-практики и помощь с трудоустройством (92% выпускников находят работу). От AI и интернет-маркетинга GEO/AEO/SEO до QA, мобильных приложений для Android и финансов!',
-        stat_1_val: 'до 80%',
-        stat_1_lbl: 'Гос. ваучер (до 7000₪)',
-        stat_2_val: 'до 100%',
-        stat_2_lbl: 'Пикадон для солдат',
-        stat_3_val: '85%',
-        stat_3_lbl: 'Живой практики в проектах',
-        stat_4_val: '92%',
-        stat_4_lbl: 'Помощь с трудоустройством',
-        hero_cta_1: 'Рассчитать мой ваучер до 80% (7000₪)',
-        hero_cta_2: 'Подобрать курс и филиал за 30 секунд',
-        hero_img_tag1: 'שובר משרד הקליטה • до 80% (7000₪)',
-        hero_img_tag2: '30+ городов + Zoom',
-        hero_card_kicker: 'Учёба рядом с домом без языкового стресса',
-        hero_card_title: 'Ришон-ле-Цион, Тель-Авив, Хайфа, Нетания, Ашдод, Беэр-Шева и ещё 25+ городов',
-        hooks_kicker: 'Почему тысячи репатриантов и израильтян выбирают U-Time College',
-        hooks_title: 'Современная программа обучения, опытные преподаватели и самые денежные специальности 2026 года',
-        hooks_subtitle: 'ИИ и нейросети изменили рынок труда: сегодня выигрывают те, кто владеет практическими инструментами AI, умеет привлекать трафик из ChatGPT и Google AI, создаёт приложения и автоматизирует тестирование!',
-        pil_1_t: 'Современная программа обучения',
-        pil_1_d: '85% курса — живая практика на реальных кейсах израильского рынка! Вы осваиваете профессию на понятном русском языке с плавным погружением в профессиональный иврит и английский.',
-        pil_2_t: 'Опытные преподаватели',
-        pil_2_d: '100% наших лекторов — практикующие эксперты израильских IT-компаний, маркетинговых агентств и финансовых департаментов, передающие актуальный опыт работы в Израиле.',
-        pil_3_t: 'Помощь с трудоустройством',
-        pil_3_d: '92% выпускников трудоустраиваются! Готовим резюме по израильскому стандарту, тренируем прохождение интервью и выдаём письменное обязательство трудоустройства для ваучера.',
-        c1_tag: 'Флагман 2026 • GEO / AEO / SEO',
-        c1_title: 'Курсы обучения AI, Digital-Маркетингу и Трафику (GEO / AEO / SEO)',
-        c1_desc: 'ChatGPT, Perplexity и Google AI Overviews перехватывают до 65% поисковых кликов! Научитесь выводить сайты в топ ответов нейросетей, запускать окупаемый таргет и контекст и создавать AI-воронки с ростом конверсии до +265%!',
-        c1_foot: 'Субсидия по ваучеру до 80% (7000₪)',
-        c2_tag: 'Быстрый вход в Hi-Tech',
-        c2_title: 'Тестировщик ПО (QA Software Tester) и AI-Автоматизация',
-        c2_desc: 'Освойте тестирование коммерческого ПО с нуля без математического диплома: тест-дизайн, Jira, SQL, API, тестирование мобильных и веб-систем с применением современных ИИ-ассистентов.',
-        c2_foot: 'Официальный диплом + стажировка',
-        c3_tag: 'Mobile & Web Dev',
-        c3_title: 'Мобильные приложения (особенно приложения для Android) и Веб-приложения',
-        c3_desc: 'Создавайте востребованные мобильные приложения для смартфонов на Android и интерактивные облачные веб-приложения с подключением платежных шлюзов, баз данных и ИИ-модулей!',
-        c3_foot: 'Готовое приложение в портфолио',
-        c4_tag: 'Backend, Desktop & Games',
-        c4_title: 'Настольные приложения, Веб-серверы и серверы приложений, Игры',
-        c4_desc: 'Проектируйте корпоративные настольные приложения, надежные веб-серверы и серверы приложений, а также увлекательные мобильные и компьютерные игры с современной графикой и физикой!',
-        c4_foot: '85% практики на живом коде',
-        c5_tag: 'Финансы и Бизнес Израиля',
-        c5_title: 'Бухгалтерия (ступени 1+2) и Расчет зарплат (Хешеб Схар)',
-        c5_desc: 'Стабильная и уважаемая профессия в любом городе Израиля: израильское налогообложение, программы учета, расчет зарплат и автоматизация финансовой отчетности с подготовкой к гос. экзаменам.',
-        c5_foot: 'Одобрено для ваучера до 80%',
-        c6_tag: '30+ Филиалов и Лицензии',
-        c6_title: 'Профессиональные Ульпаны, Косметология и Прикладные профессии',
-        c6_desc: 'Ульпаны иврита (Алеф, Бет, Гимел, медицинский и деловой иврит), аппаратная косметология, ассистент стоматолога, слаботочные системы безопасности и руководство строительными работами.',
-        c6_foot: 'Утренние и вечерние группы',
-        card_cta: 'Рассчитать →',
-        quiz_kicker: 'Экспресс-проверка субсидии по стандарту gov.il',
-        quiz_title: 'Ответьте на 3 вопроса и получите подтверждение ваучера до 80% (7000₪) в WhatsApp',
-        q_lbl_1: '1. Ваш статус в Израиле',
-        q_lbl_2: '2. Желаемое направление',
-        q_lbl_3: '3. Удобный город (30+ филиалов)',
-        quiz_btn: 'Проверить ваучер до 80% (7000₪) в WhatsApp',
-        faq_title: 'Точные ответы о ваучере 80% (7000₪), филиалах и трудоустройстве (База знаний GEO / AEO)',
-        faq_q1: 'Действительно ли дают ваучер до 80% (7000₪) новым репатриантам?',
-        faq_a1: 'Да, по официальным правилам Министерства алии и интеграции Израиля (gov.il) репатрианты до 10 лет в стране, закончившие ульпан Алеф, получают государственный ваучер, покрывающий до 80% стоимости курса (максимум до 7000₪ / 1900$). U-Time College оформляет все бланки и письменное обязательство трудоустройства.',
-        faq_q2: 'Зачем изучать AI и продвижение GEO / AEO / SEO в 2026 году?',
-        faq_a2: 'Поисковые системы перешли на ответы искусственного интеллекта: ChatGPT, Perplexity и Google AI Overviews формируют рекомендации напрямую. Специалисты, умеющие выводить сайты в ответы нейросетей и настраивать AI-воронки трафика, зарабатывают в Израиле 14000–26000₪ (3800–7000$) в штате или на фрилансе.',
-        footer_copy: '© מכללת U-Time • Ришон-ле-Цион (ул. Тармав 7) и 30+ филиалов в Израиле • 1-700-70-80-19',
-        mob_cta: 'Калькулятор ваучера 80% (7000₪)'
+        nav_home: "1. Главная и Все Курсы",
+        nav_offer: "2. Калькулятор Ваучера 80%",
+        nav_audit: "3. Аудит & Рост (+265%)",
+        hero_tag: "⚡ ОФИЦИАЛЬНАЯ ПОДДЕРЖКА ГОСУДАРСТВА В ИЗРАИЛЕ",
+        hero_title: "Курсы Нового Поколения <span class=\"gradient-text\">с Ваучером до 80% (7000₪)</span> и Пикадоном до 100%",
+        hero_subtitle: "Колледж U-Time — более 30 филиалов по всей стране и онлайн. Освойте востребованную профессию: AI & GEO/AEO/SEO маркетинг, QA, мобильную и веб разработку, бухгалтерию и языки с официальной помощью в трудоустройстве.",
+        btn_calc_voucher: "Рассчитать мой ваучер 80% (7000₪)",
+        btn_all_courses: "Каталог 9 направлений",
+        badge_branch: "30+ филиалов по Израилю & Онлайн",
+        courses_section_title: "Каталог Курсов U-Time College 2026",
+        courses_section_sub: "9 флагманских направлений обучения с содействием Министерства алии и ЦАХАЛ",
+        footer_copy: "© מכללת U-Time • Ришон-ле-Цион (ул. Тармав 7) и 30+ филиалов в Израиле • Тел.: 03-5757295 • WhatsApp: 055-994-5112",
+        mob_cta: "Калькулятор ваучера 80% (7000₪)"
       },
       he: {
-        nav_subtitle: 'מכללת U-Time • רשת מכללות להייטק, AI, שיווק GEO/AEO/SEO וקריירה',
-        nav_home: 'ראשי',
-        nav_offer: 'מחשבון שובר 80%',
-        nav_audit: 'אודיט וצמיחה (+265%)',
-        hero_badge: 'בחסות משרד העלייה והקליטה • 30+ סניפים קרוב לבית • שובר עד 80% (7000₪)',
-        hero_title_1: 'רכשו מקצוע מבוקש בישראל עם מימון ממשלתי של עד 80%–100% והכנסה של',
-        hero_title_salary: '13000–26000₪ (3500–7000$)',
-        hero_desc: 'אל תבזבזו שנים על חסמים! ב-U-Time College מחכים לכם מעל 30 סניפים ברחבי הארץ ולימודי אונליין, תוכנית לימודים מודרנית (85% פרקטיקה), מרצים מנוסים וסיוע מוכח בהשמה לעבודה (92% מהבוגרים משתלבים בתעשייה). מלימודי AI ושיווק GEO/AEO/SEO ועד QA, אפליקציות לאנדרואיד ופיננסים!',
-        stat_1_val: 'עד 80%',
-        stat_1_lbl: 'שובר ממשלתי (עד 7000₪)',
-        stat_2_val: 'עד 100%',
-        stat_2_lbl: 'פיקדון לחיילים משוחררים',
-        stat_3_val: '85%',
-        stat_3_lbl: 'פרקטיקה מעשית בפרויקטים',
-        stat_4_val: '92%',
-        stat_4_lbl: 'סיוע בהשמה לעבודה',
-        hero_cta_1: 'חשבו את השובר שלי עד 80% (7000₪)',
-        hero_cta_2: 'התאימו קורס וסניף תוך 30 שניות',
-        hero_img_tag1: 'שובר משרד הקליטה • עד 80% (7000₪)',
-        hero_img_tag2: '30+ ערים + Zoom',
-        hero_card_kicker: 'לימודים קרוב לבית בלי מחסום שפה',
-        hero_card_title: 'ראשון לציון, תל אביב, חיפה, נתניה, אשדוד, באר שבע ועוד 25+ ערים',
-        hooks_kicker: 'מדוע אלפי עולים וישראלים בוחרים ב-U-Time College',
-        hooks_title: 'תוכנית לימודים מודרנית, מרצים מנוסים והמקצועות הרווחיים ביותר לשנת 2026',
-        hooks_subtitle: 'הבינה המלאכותית שינתה את שוק העבודה: המנצחים של 2026 הם אלו ששולטים בכלי AI, יודעים להזרים טראפיק מ-ChatGPT ומ-Google AI, מפתחים אפליקציות ומבצעים בדיקות תוכנה חכמות!',
-        pil_1_t: 'תוכנית לימודים מודרנית',
-        pil_1_d: '85% מהקורס מוקדש לפרקטיקה חיה על פרויקטים אמיתיים מהשוק הישראלי! לימודים דו-לשוניים נגישים עם הטמעה מלאה של עברית ואנגלית מקצועית.',
-        pil_2_t: 'מרצים מנוסים',
-        pil_2_d: '100% מסגל המרצים הם מומחים פעילים מחברות הייטק, סוכנויות דיגיטל ומחלקות כספים בישראל המעבירים ידע מעשי מהשטח.',
-        pil_3_t: 'סיוע בהשמה לעבודה',
-        pil_3_d: '92% הצלחה בהשמה! אנו בונים קורות חיים, מכינים לראיונות עבודה ומנפיקים טופס התחייבות להשמה בעבודה לאישור השובר.',
-        c1_tag: 'מסלול הדגל 2026 • GEO / AEO / SEO',
-        c1_title: 'קורסי AI, שיווק דיגיטלי והזרמת טראפיק (GEO / AEO / SEO)',
-        c1_desc: 'ChatGPT, Perplexity ו-Google AI Overviews לוקחים עד 65% מהתנועה בחיפוש! למדו להוביל עסקים לראש תשובות ה-AI, לנהל קמפיינים ממומנים ולבנות משפכי מכירות עם צמיחה של עד +265% בהמרה!',
-        c1_foot: 'מימון שובר עד 80% (7000₪)',
-        c2_tag: 'כניסה מהירה להייטק',
-        c2_title: 'בודק תוכנה (QA Software Tester) ואוטומציית AI',
-        c2_desc: 'רכשו מקצוע מבוקש בהייטק מאפס: תכנון בדיקות, Jira, SQL, API, בדיקות מובייל וווב בשילוב כלי בינה מלאכותית מתקדמים.',
-        c2_foot: 'תעודה רשמית + סטאז׳ מעשי',
-        c3_tag: 'Mobile & Web Dev',
-        c3_title: 'אפליקציות מובייל (במיוחד אפליקציות לאנדרואיד) ואפליקציות ווב',
-        c3_desc: 'פתחו אפליקציות מובייל מהירות לסמארטפונים מבוססי Android ואפליקציות ווב מתקדמות עם חיבור למערכות סליקה, מסדי נתונים ומודלי AI!',
-        c3_foot: 'אפליקציה מוכנה בתיק העבודות',
-        c4_tag: 'Backend, Desktop & Games',
-        c4_title: 'אפליקציות שולחן עבודה, שרתי ווב ושרתי אפליקציות, ומשחקים',
-        c4_desc: 'תכננו אפליקציות שולחן עבודה ארגוניות, שרתי ווב ושרתי אפליקציות חזקים, וכן משחקי מובייל ומחשב מרתקים עם גרפיקה דינמית!',
-        c4_foot: '85% פרקטיקה בכתיבת קוד',
-        c5_tag: 'פיננסים ועסקים בישראל',
-        c5_title: 'הנהלת חשבונות (סוג 1+2) וחשבות שכר',
-        c5_desc: 'מקצוע יציב ומבוקש בכל עיר בישראל: מיסוי ישראלי, תוכנות הנהלת חשבונות, חישוב שכר ואוטומציה פיננסית עם הכנה למבחני ההסמכה.',
-        c5_foot: 'מאושר לשובר עד 80%',
-        c6_tag: '30+ סניפים והסמכות',
-        c6_title: 'אולפנים מקצועיים, קוסמטיקה ומקצועות מעשיים',
-        c6_desc: 'אולפני עברית (א׳, ב׳, ג׳, עברית רפואית ועסקית), קוסמטיקה מכשירנית, סייעות לרופאי שיניים, מערכות מתח נמוך ומנהלי עבודה בבניין.',
-        c6_foot: 'קבוצות בוקר וערב גמישות',
-        card_cta: 'למחשבון ←',
-        quiz_kicker: 'בדיקת זכאות מהירה לפי נהלי gov.il',
-        quiz_title: 'ענו על 3 שאלות וקבלו אישור זכאות לשובר עד 80% (7000₪) ב-WhatsApp',
-        q_lbl_1: '1. הסטטוס שלכם בישראל',
-        q_lbl_2: '2. מסלול הלימודים המבוקש',
-        q_lbl_3: '3. עיר מועדפת (30+ סניפים)',
-        quiz_btn: 'בדקו שובר עד 80% (7000₪) ב-WhatsApp',
-        faq_title: 'תשובות מדויקות על שובר 80% (7000₪), סניפים והשמה (מאגר ידע GEO / AEO)',
-        faq_q1: 'האם באמת מעניקים שובר עד 80% (7000₪) לעולים חדשים?',
-        faq_a1: 'כן, לפי נהלי משרד העלייה והקליטה (gov.il) עולים חדשים עד 10 שנים בארץ בוגרי אולפן א׳ זכאים לשובר הכשרה מקצועית המכסה עד 80% מעלות הקורס (עד תקרה של 7000₪ / 1900$). U-Time College מסדירה את כל הטפסים והתחייבות ההשמה.',
-        faq_q2: 'מדוע כדאי ללמוד AI וקידום GEO / AEO / SEO ב-2026?',
-        faq_a2: 'מנועי החיפוש עברו לתשובות בינה מלאכותית: ChatGPT, Perplexity ו-Google AI Overviews ממליצים ישירות על עסקים. מומחים שיודעים לקדם מותגים בתשובות ה-AI ולהקים מערכות לידים מרוויחים בישראל 14000–26000₪ (3800–7000$) בחודש.',
-        footer_copy: '© מכללת U-Time • ראשון לציון (רח׳ תרמ״ב 7) ו-30+ סניפים בישראל • 1-700-70-80-19',
-        mob_cta: 'מחשבון שובר 80% (7000₪)'
+        nav_home: "1. ראשי וכל הקורסים",
+        nav_offer: "2. מחשבון ואוצ'ר 80%",
+        nav_audit: "3. ביקורת וצמיחה (+265%)",
+        hero_tag: "⚡ סבסוד ממשלתי רשמי בישראל",
+        hero_title: "קורסים מתקדמים <span class=\"gradient-text\">עם ואוצ'ר עד 80% (7000₪)</span> ופיקדון עד 100%",
+        hero_subtitle: "מכללת U-Time — מעל 30 סניפים בפריסה ארצית ואונליין. מקצועות הייטק, AI, שיווק דיגיטלי, QA, פיתוח אפליקציות וחשבונאות עם ליווי להשמה.",
+        btn_calc_voucher: "חשב את גובה הואוצ'ר שלי (עד 7000₪)",
+        btn_all_courses: "קטלוג 9 מסלולי לימוד",
+        badge_branch: "30+ סניפים בישראל ואונליין",
+        courses_section_title: "קטלוג הקורסים של מכללת U-Time",
+        courses_section_sub: "9 מסלולי הכשרה מובילים בשיתוף משרד העלייה והקליטה וקרן הפיקדון לחיילים משוחררים",
+        footer_copy: "© מכללת U-Time • ראשון לציון (תרמ\"ב 7) ו-30 סניפים בישראל • טלפון: 03-5757295 • וואטסאפ: 055-994-5112",
+        mob_cta: "מחשבון ואוצ'ר 80% (7000₪)"
       },
       en: {
-        nav_subtitle: 'מכללת U-Time • 30+ Campuses for IT, AI, GEO/AEO/SEO & Career',
-        nav_home: 'Home Showcase',
-        nav_offer: '80% Voucher Calculator',
-        nav_audit: 'Audit & Growth (+265%)',
-        hero_badge: 'Ministry of Aliyah Approved • 30+ Campuses Near You • Up to 80% Voucher (7000₪)',
-        hero_title_1: 'Master a high-demand profession in Israel with up to 80%–100% state funding and earn',
-        hero_title_salary: '13000–26000₪ (3500–7000$)',
-        hero_desc: 'Stop losing years to language barriers! U-Time College offers 30+ campuses nationwide plus live online classes, a modern training program (85% hands-on practice), experienced instructors, and job placement assistance (92% employment rate). From AI & GEO/AEO/SEO marketing to QA, Android mobile apps, and finance!',
-        stat_1_val: 'up to 80%',
-        stat_1_lbl: 'State Voucher (up to 7000₪)',
-        stat_2_val: 'up to 100%',
-        stat_2_lbl: 'IDF Pikadon Coverage',
-        stat_3_val: '85%',
-        stat_3_lbl: 'Real Hands-On Practice',
-        stat_4_val: '92%',
-        stat_4_lbl: 'Job Placement Support',
-        hero_cta_1: 'Calculate My 80% Voucher (7000₪)',
-        hero_cta_2: 'Match Course & Campus in 30s',
-        hero_img_tag1: 'שובר משרד הקליטה • up to 80% (7000₪)',
-        hero_img_tag2: '30+ Cities + Zoom',
-        hero_card_kicker: 'Study Near Home Without Language Stress',
-        hero_card_title: 'Rishon LeZion, Tel Aviv, Haifa, Netanya, Ashdod, Beer Sheva & 25+ More Cities',
-        hooks_kicker: 'Why Thousands of Olim and Israelis Choose U-Time College',
-        hooks_title: 'Modern training program, experienced instructors, and 2026’s highest-paying skills',
-        hooks_subtitle: 'AI has transformed the job market: today’s winners master practical AI workflows, capture traffic from ChatGPT and Google AI Overviews, build mobile/web apps, and automate software testing!',
-        pil_1_t: 'Modern Training Program',
-        pil_1_d: '85% of your training is live hands-on practice on real Israeli market cases! Learn comfortably with bilingual support and master professional Hebrew and English terminology.',
-        pil_2_t: 'Experienced Instructors',
-        pil_2_d: '100% of our lecturers are practicing experts from Israeli High-Tech firms, digital agencies, and finance departments sharing actionable real-world workflows.',
-        pil_3_t: 'Job Placement Assistance',
-        pil_3_d: '92% graduate employment rate! We craft your Israeli CV, run mock interviews, and provide the official written job placement commitment for your voucher.',
-        c1_tag: '2026 Flagship • GEO / AEO / SEO',
-        c1_title: 'AI Engineering, Digital Marketing & Traffic Courses (GEO / AEO / SEO)',
-        c1_desc: 'ChatGPT, Perplexity, and Google AI Overviews capture up to 65% of search intent! Learn to rank brands at the top of AI answers, run high-ROI paid traffic, and build AI funnels with up to +265% conversion lift!',
-        c1_foot: 'Up to 80% (7000₪) voucher coverage',
-        c2_tag: 'Fast-Track High-Tech Entry',
-        c2_title: 'QA Software Tester & AI Test Automation',
-        c2_desc: 'Break into software testing from scratch without a CS degree: test design, Jira, SQL, API testing, mobile/web QA, and modern AI testing workflows.',
-        c2_foot: 'Official diploma + practical internship',
-        c3_tag: 'Mobile & Web Dev',
-        c3_title: 'Mobile Applications (Especially Android Apps) & Web Applications',
-        c3_desc: 'Build fast native and cross-platform Android smartphone apps and responsive cloud web applications integrated with payment gateways, databases, and AI APIs!',
-        c3_foot: 'Production app in your portfolio',
-        c4_tag: 'Backend, Desktop & Games',
-        c4_title: 'Desktop Applications, Web & Application Servers, and Games',
-        c4_desc: 'Engineer enterprise desktop applications, high-reliability web & application servers, and engaging mobile and desktop games with modern graphics and physics!',
-        c4_foot: '85% hands-on coding practice',
-        c5_tag: 'Israeli Finance & Business',
-        c5_title: 'Bookkeeping (Levels 1+2) & Payroll Accounting (Heshev Sakhar)',
-        c5_desc: 'A stable, respected career in every Israeli city: Israeli tax law, accounting software, payroll calculation, and financial AI automation with state exam prep.',
-        c5_foot: 'Approved for up to 80% voucher',
-        c6_tag: '30+ Branches & Licenses',
-        c6_title: 'Specialized Hebrew Ulpans, Cosmetology & Licensed Trades',
-        c6_desc: 'Hebrew Ulpans (Alef, Bet, Gimel, medical & business Hebrew), aesthetic cosmetology, dental assisting, security camera systems, and construction management.',
-        c6_foot: 'Flexible morning & evening cohorts',
-        card_cta: 'Calculate →',
-        quiz_kicker: 'Express gov.il Subsidy Check',
-        quiz_title: 'Answer 3 questions and get your 80% (7000₪) voucher confirmation on WhatsApp',
-        q_lbl_1: '1. Your Status in Israel',
-        q_lbl_2: '2. Target Program',
-        q_lbl_3: '3. Preferred City (30+ Campuses)',
-        quiz_btn: 'Verify 80% Voucher (7000₪) on WhatsApp',
-        faq_title: 'Verified Answers on the 80% (7000₪) Voucher, Campuses & Placement (GEO / AEO Hub)',
-        faq_q1: 'Do Olim Chadashim genuinely receive the 80% (7000₪) state voucher?',
-        faq_a1: 'Yes, under official Ministry of Aliyah and Integration rules (gov.il), Olim up to 10 years in Israel who completed Ulpan Alef receive a state voucher covering up to 80% of tuition (up to 7000₪ / 1900$). U-Time College prepares all forms and the written placement commitment.',
-        faq_q2: 'Why study AI and GEO / AEO / SEO marketing in 2026?',
-        faq_a2: 'Search has shifted to AI answers: ChatGPT, Perplexity, and Google AI Overviews recommend brands directly. Specialists who rank websites inside AI answers and build automated traffic funnels earn 14000–26000₪ (3800–7000$) per month in Israel.',
-        footer_copy: '© מכללת U-Time • Rishon LeZion (Tarmav 7) & 30+ Campuses in Israel • 1-700-70-80-19',
-        mob_cta: '80% Voucher Calculator (7000₪)'
+        nav_home: "1. Home & All Courses",
+        nav_offer: "2. Voucher 80% Calculator",
+        nav_audit: "3. Audit & Growth (+265%)",
+        hero_tag: "⚡ OFFICIAL ISRAELI STATE VOUCHER SUPPORT",
+        hero_title: "Next-Gen Career Programs <span class=\"gradient-text\">with up to 80% Voucher (7000₪)</span> & 100% Pikadon",
+        hero_subtitle: "U-Time College — 30+ branches across Israel and interactive online courses. Master high-demand careers: AI & GEO/AEO/SEO Marketing, QA, Mobile & Web Dev, Bookkeeping and Hebrew Ulpans with dedicated career placement.",
+        btn_calc_voucher: "Calculate My 80% Voucher (7000₪)",
+        btn_all_courses: "Explore 9 Career Tracks",
+        badge_branch: "30+ Israeli Campuses & Online",
+        courses_section_title: "U-Time College Course Catalog 2026",
+        courses_section_sub: "9 flagship career tracks eligible for Ministry of Aliyah vouchers & IDF Pikadon",
+        footer_copy: "© U-Time College • Rishon LeZion (7 Tarmav St) & 30+ Israeli Campuses • Tel: 03-5757295 • WhatsApp: 055-994-5112",
+        mob_cta: "Calculate 80% Voucher (7000₪)"
       }
     };
 
-    function setLanguage(lang) {
-      if (!i18n[lang]) lang = 'ru';
-      currentLang = lang;
-      localStorage.setItem('utime_lang', lang);
-      const htmlEl = document.documentElement;
-      htmlEl.lang = lang;
-      htmlEl.dir = lang === 'he' ? 'rtl' : 'ltr';
+    let currentLang = 'ru';
 
-      ['ru', 'he', 'en'].forEach(code => {
-        const btn = document.getElementById('lang-btn-' + code);
-        if (!btn) return;
-        btn.className = code === lang
-          ? 'px-2.5 py-1 rounded-lg text-xs font-bold transition-all bg-gradient-to-r from-violet-600 to-sky-500 text-white shadow'
-          : 'px-2.5 py-1 rounded-lg text-xs font-bold transition-all text-sky-200 hover:text-white';
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      document.documentElement.dir = (lang === 'he') ? 'rtl' : 'ltr';
+
+      ['ru', 'he', 'en'].forEach(l => {
+        const btn = document.getElementById('lang-' + l);
+        if (btn) {
+          if (l === lang) {
+            btn.className = 'px-2.5 py-1 rounded-md text-xs font-extrabold bg-violet-600 text-white keep-white shadow-sm transition-colors';
+          } else {
+            btn.className = 'px-2.5 py-1 rounded-md text-xs font-bold text-sky-200 hover:text-white transition-colors';
+          }
+        }
       });
 
-      const dict = i18n[lang];
+      const dict = translations[lang] || translations.ru;
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if (dict[key]) el.textContent = dict[key];
+        if (dict[key]) {
+          el.innerHTML = dict[key];
+        }
       });
-    }
-
-    function applyTheme(theme) {
-      const htmlEl = document.documentElement;
-      const sun = document.getElementById('theme-icon-sun');
-      const moon = document.getElementById('theme-icon-moon');
-      if (theme === 'light') {
-        htmlEl.classList.remove('dark');
-        htmlEl.classList.add('light');
-        if (sun) sun.classList.remove('hidden');
-        if (moon) moon.classList.add('hidden');
-      } else {
-        htmlEl.classList.remove('light');
-        htmlEl.classList.add('dark');
-        if (sun) sun.classList.add('hidden');
-        if (moon) moon.classList.remove('hidden');
-      }
     }
 
     function toggleTheme() {
-      const cur = localStorage.getItem('utime_theme') || 'dark';
-      const next = cur === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('utime_theme', next);
-      applyTheme(next);
+      const html = document.documentElement;
+      const isLight = html.classList.toggle('light');
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+      updateThemeIcon(isLight);
     }
 
-    function sendQuizToWhatsApp() {
-      const st = document.getElementById('quiz-status')?.value || '';
-      const cr = document.getElementById('quiz-course')?.value || '';
-      const ct = document.getElementById('quiz-city')?.value || '';
-      const ph = (document.getElementById('quiz-phone')?.value || '').trim();
-      const msg = `U-Time College (1-700-70-80-19) — Запрос ваучера 80% (7000₪):\nСтатус: ${st}\nКурс: ${cr}\nФилиал: ${ct}\nТелефон: ${ph || 'В чате'}`;
-      window.open('https://wa.me/972559945112?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+    function updateThemeIcon(isLight) {
+      const icon = document.getElementById('theme-icon');
+      if (icon) {
+        icon.textContent = isLight ? '🌙' : '☀️';
+      }
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-      applyTheme(localStorage.getItem('utime_theme') || 'dark');
-      setLanguage(currentLang);
-      const obs = new IntersectionObserver(entries => {
-        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-      }, { threshold: 0.1 });
-      document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-    });
+    (function initTheme() {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'light') {
+        document.documentElement.classList.add('light');
+        updateThemeIcon(true);
+      } else {
+        document.documentElement.classList.remove('light');
+        updateThemeIcon(false);
+      }
+    })();
+
+    // Reveal animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
